@@ -75,7 +75,10 @@
     [super viewDidLoad];
     
     [self setupSubviews];
-    [self refreshData];
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self refreshData];
+    });
 }
 
 - (void)setupSubviews {
@@ -169,6 +172,9 @@
     [self.dataList addObjectsFromArray:dataList];
     [self.tableView reloadData];
     
+    if (self.dataList.count > 0) {
+        [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:YES scrollPosition:UITableViewScrollPositionNone];
+    }
     self.selectedSpecModel = dataList.firstObject;
 }
 
@@ -239,7 +245,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
+    
+    cell.textLabel.textAlignment = NSTextAlignmentCenter;
     cell.textLabel.text = self.dataList[indexPath.row].title;
+    
     return cell;
 }
 

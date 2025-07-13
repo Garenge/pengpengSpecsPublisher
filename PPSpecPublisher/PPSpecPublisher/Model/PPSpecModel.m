@@ -17,7 +17,8 @@
     _path = path;
     
     // 获取所有的版本信息
-    NSArray <NSString *>*fileList = [NSFileManager.defaultManager contentsOfDirectoryAtPath:path error:nil];
+    NSMutableArray <NSString *>*fileList = [NSFileManager.defaultManager contentsOfDirectoryAtPath:path error:nil].mutableCopy;
+    [fileList sortUsingSelector:@selector(localizedStandardCompare:)];
     NSMutableArray <PPSpecVersionModel *>*versions = [NSMutableArray array];
     for (NSString *fileName in fileList) {
         if ([fileName hasPrefix:@"."]) {

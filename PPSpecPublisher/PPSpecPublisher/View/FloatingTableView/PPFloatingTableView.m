@@ -64,7 +64,17 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
-    cell.textLabel.text = self.dataList[indexPath.row];
+    UILabel *titleLabel = [cell.contentView viewWithTag:1001];
+    if (nil == titleLabel) {
+        titleLabel = [UILabel pp_labelWithText:@"" textColor:UIColor.darkTextColor font:[UIFont systemFontOfSize:16] alignment:NSTextAlignmentCenter];
+        titleLabel.tag = 1001;
+        [cell.contentView addSubview:titleLabel];
+        
+        [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.mas_equalTo(UIEdgeInsetsZero);
+        }];
+    }
+    titleLabel.text = self.dataList[indexPath.row];
     return cell;
 }
 
