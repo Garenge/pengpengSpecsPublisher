@@ -23,6 +23,8 @@
 @property (nonatomic, strong) UIButton *versionBtn;
 @property (nonatomic, strong) UITextView *textView;
 
+@property (nonatomic, strong) PPAlertBaseView *floatAlertView;
+
 @end
 
 @implementation ViewController
@@ -34,21 +36,31 @@
     return _dataList;
 }
 
+- (PPAlertBaseView *)floatAlertView {
+    if (nil == _floatAlertView) {
+        _floatAlertView = [[PPAlertBaseView alloc] initWithFrame:CGRectZero];
+        _floatAlertView.backgroundColor = rgba(0, 0, 0, 0.1);
+        
+        __weak typeof(self) weakSelf = self;
+        _floatAlertView.touchEmptyAreaBlock = ^(PPAlertBaseView * _Nonnull alertView) {
+            [weakSelf.floatAlertView dismiss];
+        };
+    }
+    return _floatAlertView;
+}
+
 - (PPFloatingTableView *)floatingTableView {
     if (nil == _floatingTableView) {
+        
+        
+        
         _floatingTableView = [[PPFloatingTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
-        [self.view addSubview:_floatingTableView];
-        _floatingTableView.hidden = YES;
-        [_floatingTableView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.right.equalTo(self.versionBtn);
-            make.top.equalTo(self.versionBtn.mas_bottom).offset(4);
-            make.height.mas_equalTo(200);
-        }];
+        [self.floatAlertView addSubview:_floatingTableView];
         
         __weak typeof(self) weakSelf = self;
         self.floatingTableView.didSelectedAtIndex = ^(PPFloatingTableView * _Nonnull floatingView, NSInteger index) {
             weakSelf.selectedVersionModel = weakSelf.selectedSpecModel.versions[index];
-            floatingView.hidden = YES;
+            [weakSelf.floatAlertView dismiss];
         };
         // 阴影
         _floatingTableView.layer.shadowColor = UIColor.blackColor.CGColor;
@@ -209,10 +221,10 @@
         return element.version;
     }];
     self.floatingTableView.dataList = list;
-    self.floatingTableView.hidden = NO;
-    [self.floatingTableView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.height.mas_equalTo(MIN(40 * list.count, 200));
-    }];
+    
+    CGRect fullFrame = [self.versionBtn convertRect:self.versionBtn.bounds toView:UIApplication.sharedApplication.keyWindow];
+    self.floatingTableView.frame = CGRectMake(fullFrame.origin.x, fullFrame.origin.y + fullFrame.size.height + 4, fullFrame.size.width, MIN(40 * list.count, 200));
+    [self.floatAlertView show];
 }
 
 #pragma mark - tableView delegate dataSource
