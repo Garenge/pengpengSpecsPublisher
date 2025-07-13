@@ -1,0 +1,31 @@
+PODS:
+  - Masonry (1.1.0)
+  - PPCatalystTool (1.0.9)
+  - PPToolKit (0.1.5):
+    - Masonry
+    - PPToolKit/Core (= 0.1.5)
+  - PPToolKit/Core (0.1.5):
+    - Masonry
+
+DEPENDENCIES:
+  - PPCatalystTool (from `../../PPCatalystTool`)
+  - PPToolKit (from `../../PPToolKit`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+
+EXTERNAL SOURCES:
+  PPCatalystTool:
+    :path: "../../PPCatalystTool"
+  PPToolKit:
+    :path: "../../PPToolKit"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  PPCatalystTool: 2e0115baef081d1215d5d0aa13c0524271c90bb6
+  PPToolKit: 948a21684fbda208804d8f6e342f1cb4941b9add
+
+PODFILE CHECKSUM: 76109c66133beb2296ca4b6f4706179e61cc10ee
+
+COCOAPODS: 1.16.2
