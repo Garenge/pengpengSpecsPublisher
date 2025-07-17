@@ -16,11 +16,29 @@
 		9D6DBA282E235FAC00138692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6DBA142E235FAC00138692 /* LaunchScreen.storyboard */; };
 		9D6DBA292E235FAC00138692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6DBA172E235FAC00138692 /* Main.storyboard */; };
 		9D6DBA2F2E239F4400138692 /* PPFloatingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6DBA2E2E239F4400138692 /* PPFloatingTableView.m */; };
+		9D6DBA3B2E23D7C200138692 /* PPAddNewVersionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6DBA3A2E23D7C200138692 /* PPAddNewVersionVC.m */; };
+		9D6DBA4B2E27EE9200138692 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6DBA492E27EE9200138692 /* main.m */; };
+		9D6DBA4F2E27F3CD00138692 /* CommandClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6DBA4E2E27F3CD00138692 /* CommandClient.m */; };
+		BDD1F93E5AB64F1097D5912F /* libPods-CommandHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA6CA3B6A5381FCD888D0F5D /* libPods-CommandHelper.a */; };
 		E8894DA5E83AE420478657CD /* Pods_PPSpecPublisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5FC114CD4046DC26380243 /* Pods_PPSpecPublisher.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9D6DBA3E2E27E6A400138692 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0E261748167BEE3A99DD9266 /* Pods-PPSpecPublisher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPSpecPublisher.debug.xcconfig"; path = "Target Support Files/Pods-PPSpecPublisher/Pods-PPSpecPublisher.debug.xcconfig"; sourceTree = "<group>"; };
+		4A8143A8F921A74231C51AF7 /* Pods-CommandHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommandHelper.release.xcconfig"; path = "Target Support Files/Pods-CommandHelper/Pods-CommandHelper.release.xcconfig"; sourceTree = "<group>"; };
+		774669FDF5667821BD2F7E09 /* Pods-CommandHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommandHelper.debug.xcconfig"; path = "Target Support Files/Pods-CommandHelper/Pods-CommandHelper.debug.xcconfig"; sourceTree = "<group>"; };
 		953A70A163C0BEFCBE801210 /* Pods-PPSpecPublisher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPSpecPublisher.release.xcconfig"; path = "Target Support Files/Pods-PPSpecPublisher/Pods-PPSpecPublisher.release.xcconfig"; sourceTree = "<group>"; };
 		9D6DB9C12E235C3A00138692 /* PPSpecPublisher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPSpecPublisher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6DBA0F2E235FAC00138692 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +58,13 @@
 		9D6DBA1F2E235FAC00138692 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9D6DBA2D2E239F4400138692 /* PPFloatingTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPFloatingTableView.h; sourceTree = "<group>"; };
 		9D6DBA2E2E239F4400138692 /* PPFloatingTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPFloatingTableView.m; sourceTree = "<group>"; };
+		9D6DBA392E23D7C200138692 /* PPAddNewVersionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPAddNewVersionVC.h; sourceTree = "<group>"; };
+		9D6DBA3A2E23D7C200138692 /* PPAddNewVersionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPAddNewVersionVC.m; sourceTree = "<group>"; };
+		9D6DBA402E27E6A400138692 /* CommandHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CommandHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D6DBA492E27EE9200138692 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D6DBA4D2E27F3CD00138692 /* CommandClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandClient.h; sourceTree = "<group>"; };
+		9D6DBA4E2E27F3CD00138692 /* CommandClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandClient.m; sourceTree = "<group>"; };
+		EA6CA3B6A5381FCD888D0F5D /* libPods-CommandHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CommandHelper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5FC114CD4046DC26380243 /* Pods_PPSpecPublisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PPSpecPublisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -52,6 +77,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D6DBA3D2E27E6A400138692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD1F93E5AB64F1097D5912F /* libPods-CommandHelper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -60,6 +93,8 @@
 			children = (
 				0E261748167BEE3A99DD9266 /* Pods-PPSpecPublisher.debug.xcconfig */,
 				953A70A163C0BEFCBE801210 /* Pods-PPSpecPublisher.release.xcconfig */,
+				774669FDF5667821BD2F7E09 /* Pods-CommandHelper.debug.xcconfig */,
+				4A8143A8F921A74231C51AF7 /* Pods-CommandHelper.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -68,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				EC5FC114CD4046DC26380243 /* Pods_PPSpecPublisher.framework */,
+				EA6CA3B6A5381FCD888D0F5D /* libPods-CommandHelper.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -76,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				9D6DBA202E235FAC00138692 /* PPSpecPublisher */,
+				9D6DBA4A2E27EE9200138692 /* CommandHelper */,
 				9D6DB9C22E235C3A00138692 /* Products */,
 				266B2533562660FD6C6E8249 /* Pods */,
 				62A6BCFCABFB2FB6C6C34850 /* Frameworks */,
@@ -86,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				9D6DB9C12E235C3A00138692 /* PPSpecPublisher.app */,
+				9D6DBA402E27E6A400138692 /* CommandHelper */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +131,8 @@
 		9D6DBA202E235FAC00138692 /* PPSpecPublisher */ = {
 			isa = PBXGroup;
 			children = (
+				9D6DBA4C2E27F3B100138692 /* CommandClient */,
+				9D6DBA382E23D7AE00138692 /* AddNew */,
 				9D6DBA2B2E239F0300138692 /* View */,
 				9D6DBA0F2E235FAC00138692 /* AppDelegate.h */,
 				9D6DBA102E235FAC00138692 /* AppDelegate.m */,
@@ -138,6 +178,32 @@
 			path = FloatingTableView;
 			sourceTree = "<group>";
 		};
+		9D6DBA382E23D7AE00138692 /* AddNew */ = {
+			isa = PBXGroup;
+			children = (
+				9D6DBA392E23D7C200138692 /* PPAddNewVersionVC.h */,
+				9D6DBA3A2E23D7C200138692 /* PPAddNewVersionVC.m */,
+			);
+			path = AddNew;
+			sourceTree = "<group>";
+		};
+		9D6DBA4A2E27EE9200138692 /* CommandHelper */ = {
+			isa = PBXGroup;
+			children = (
+				9D6DBA492E27EE9200138692 /* main.m */,
+			);
+			path = CommandHelper;
+			sourceTree = "<group>";
+		};
+		9D6DBA4C2E27F3B100138692 /* CommandClient */ = {
+			isa = PBXGroup;
+			children = (
+				9D6DBA4D2E27F3CD00138692 /* CommandClient.h */,
+				9D6DBA4E2E27F3CD00138692 /* CommandClient.m */,
+			);
+			path = CommandClient;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,6 +226,24 @@
 			productReference = 9D6DB9C12E235C3A00138692 /* PPSpecPublisher.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9D6DBA3F2E27E6A400138692 /* CommandHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D6DBA462E27E6A400138692 /* Build configuration list for PBXNativeTarget "CommandHelper" */;
+			buildPhases = (
+				1851B3BE1DD4209D0823743F /* [CP] Check Pods Manifest.lock */,
+				9D6DBA3C2E27E6A400138692 /* Sources */,
+				9D6DBA3D2E27E6A400138692 /* Frameworks */,
+				9D6DBA3E2E27E6A400138692 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommandHelper;
+			productName = CommandHelper;
+			productReference = 9D6DBA402E27E6A400138692 /* CommandHelper */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,6 +254,9 @@
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					9D6DB9C02E235C3A00138692 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					9D6DBA3F2E27E6A400138692 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
@@ -189,6 +276,7 @@
 			projectRoot = "";
 			targets = (
 				9D6DB9C02E235C3A00138692 /* PPSpecPublisher */,
+				9D6DBA3F2E27E6A400138692 /* CommandHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -207,6 +295,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1851B3BE1DD4209D0823743F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommandHelper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BBE7BA6783A2AA60E0CB823A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,12 +363,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D6DBA4F2E27F3CD00138692 /* CommandClient.m in Sources */,
 				9D6DBA212E235FAC00138692 /* AppDelegate.m in Sources */,
+				9D6DBA3B2E23D7C200138692 /* PPAddNewVersionVC.m in Sources */,
 				9D6DBA222E235FAC00138692 /* main.m in Sources */,
 				9D6DBA232E235FAC00138692 /* PPSpecModel.m in Sources */,
 				9D6DBA2F2E239F4400138692 /* PPFloatingTableView.m in Sources */,
 				9D6DBA242E235FAC00138692 /* SceneDelegate.m in Sources */,
 				9D6DBA252E235FAC00138692 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D6DBA3C2E27E6A400138692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6DBA4B2E27EE9200138692 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +596,32 @@
 			};
 			name = Release;
 		};
+		9D6DBA442E27E6A400138692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 774669FDF5667821BD2F7E09 /* Pods-CommandHelper.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E7W6597ZYH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9D6DBA452E27E6A400138692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A8143A8F921A74231C51AF7 /* Pods-CommandHelper.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E7W6597ZYH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -493,6 +639,15 @@
 			buildConfigurations = (
 				9D6DB9DA2E235C3B00138692 /* Debug */,
 				9D6DB9DB2E235C3B00138692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D6DBA462E27E6A400138692 /* Build configuration list for PBXNativeTarget "CommandHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D6DBA442E27E6A400138692 /* Debug */,
+				9D6DBA452E27E6A400138692 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

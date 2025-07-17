@@ -12,7 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PPSpecVersionModel : NSObject
 
 @property (nonatomic, strong) NSString *version;
-@property (nonatomic, strong) NSString *podSpecPath;
+@property (nonatomic, strong) NSString *podspecPath;
+
+/// github首页地址
+@property (nonatomic, strong) NSString *sourceUrl;
 
 @end
 

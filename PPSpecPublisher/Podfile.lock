@@ -1,4 +1,5 @@
 PODS:
+  - CocoaAsyncSocket (7.6.5)
   - Masonry (1.1.0)
   - PPCatalystTool (1.0.9)
   - PPToolKit (0.1.5):
@@ -8,11 +9,13 @@ PODS:
     - Masonry
 
 DEPENDENCIES:
+  - CocoaAsyncSocket
   - PPCatalystTool (from `../../PPCatalystTool`)
   - PPToolKit (from `../../PPToolKit`)
 
 SPEC REPOS:
   trunk:
+    - CocoaAsyncSocket
     - Masonry
 
 EXTERNAL SOURCES:
@@ -22,10 +25,11 @@ EXTERNAL SOURCES:
     :path: "../../PPToolKit"
 
 SPEC CHECKSUMS:
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   PPCatalystTool: 2e0115baef081d1215d5d0aa13c0524271c90bb6
   PPToolKit: 948a21684fbda208804d8f6e342f1cb4941b9add
 
-PODFILE CHECKSUM: 76109c66133beb2296ca4b6f4706179e61cc10ee
+PODFILE CHECKSUM: 42e76330d90ee41292a35fb0a0aaec75d81c3c6d
 
 COCOAPODS: 1.16.2

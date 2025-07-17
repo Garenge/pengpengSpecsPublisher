@@ -8,5 +8,11 @@ target 'PPSpecPublisher' do
   # Pods for PPSpecPublisher
   pod 'PPCatalystTool', :path => '../../PPCatalystTool'
   pod 'PPToolKit', :path => '../../PPToolKit'
+  pod 'CocoaAsyncSocket'
 
+end
+
+target 'CommandHelper' do
+  platform :macos, '10.13'
+  pod 'CocoaAsyncSocket'
 end

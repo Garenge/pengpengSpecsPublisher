@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "PPSpecModel.h"
 #import "PPFloatingTableView.h"
+#import "PPAddNewVersionVC.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -51,8 +52,6 @@
 
 - (PPFloatingTableView *)floatingTableView {
     if (nil == _floatingTableView) {
-        
-        
         
         _floatingTableView = [[PPFloatingTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         [self.floatAlertView addSubview:_floatingTableView];
@@ -124,8 +123,7 @@
 - (UIView *)setupRightContentView {
     UIView *contentView = [UIView pp_view];
     UIButton *versionBtn = [UIButton pp_buttonWithTitle:@"版本号" titleColor:UIColor.blackColor titleFont:[UIFont systemFontOfSize:16]];
-    versionBtn.borderCornerRadius = 8;
-    [versionBtn setBorderColor:UIColor.lightGrayColor width:1];
+    [versionBtn setBorderCornerRadius:8 borderColor:UIColor.lightGrayColor width:1];
     [versionBtn addTarget:self action:@selector(doClickedSelectVersionBtn:) forControlEvents:UIControlEventTouchUpInside];
     [contentView addSubview:versionBtn];
     self.versionBtn = versionBtn;
@@ -136,17 +134,37 @@
         make.height.mas_equalTo(44);
     }];
     
+    UIButton *confirmBtn = [UIButton pp_buttonWithTitle:@"添加新版本" titleColor:UIColor.blackColor titleFont:[UIFont systemFontOfSize:16]];
+    [confirmBtn setBorderCornerRadius:8 borderColor:UIColor.lightGrayColor width:1];
+    [confirmBtn addTarget:self action:@selector(doClickedAddNewVersionAction:) forControlEvents:UIControlEventTouchUpInside];
+    [contentView addSubview:confirmBtn];
+    [confirmBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.mas_equalTo(-32);
+        make.top.equalTo(versionBtn.mas_top);
+        make.height.mas_equalTo(44);
+        make.width.mas_equalTo(120);
+    }];
+    
     UITextView *textView = [[UITextView alloc] init];
     textView.font = [UIFont systemFontOfSize:17];
     textView.textColor = UIColor.blackColor;
+    textView.editable = NO;
     [contentView addSubview:textView];
     self.textView = textView;
     textView.borderCornerRadius = 8;
-    [textView setBorderColor:UIColor.lightGrayColor width:1];
+    [textView setBorderCornerRadius:8 borderColor:UIColor.lightGrayColor width:1];
     [textView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(20);
         make.right.mas_equalTo(-20);
         make.top.equalTo(versionBtn.mas_bottom).offset(20);
+    }];
+    
+    UILabel *tipsLabel = [UILabel pp_labelWithText:@"* 注意, 请确认自己修改正确之后再点击确认, 确认之后, 将在本地创建版本路径" textColor:UIColor.redColor font:[UIFont systemFontOfSize:16]];
+    [contentView addSubview:tipsLabel];
+    [tipsLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(20);
+        make.right.mas_equalTo(-20);
+        make.top.equalTo(textView.mas_bottom).offset(20);
         make.bottom.mas_equalTo(-20);
     }];
     
@@ -193,7 +211,7 @@
     NSString *version = self.selectedVersionModel.version;
     [self.versionBtn setTitle:version.length > 0 ? version : @"请选择" forState:UIControlStateNormal];
     
-    NSString *specFilePath = selectedSpecModel.selectedVersion.podSpecPath;
+    NSString *specFilePath = selectedSpecModel.selectedVersion.podspecPath;
     self.textView.text = [[NSString alloc] initWithContentsOfFile:specFilePath encoding:NSUTF8StringEncoding error:nil];
 }
 
@@ -207,7 +225,7 @@
     NSString *version = self.selectedVersionModel.version;
     [self.versionBtn setTitle:version.length > 0 ? version : @"请选择" forState:UIControlStateNormal];
     
-    NSString *specFilePath = self.selectedVersionModel.podSpecPath;
+    NSString *specFilePath = self.selectedVersionModel.podspecPath;
     self.textView.text = [[NSString alloc] initWithContentsOfFile:specFilePath encoding:NSUTF8StringEncoding error:nil];
 }
 
@@ -233,7 +251,15 @@
     [self.floatAlertView show];
 }
 
-#pragma mark - tableView delegate dataSource
+- (void)doClickedAddNewVersionAction:(UIButton *)sender {
+    PPAddNewVersionVC *vc = [[PPAddNewVersionVC alloc] init];
+    vc.selectedSpecModel = self.selectedSpecModel;
+    
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self presentViewController:navi animated:YES completion:nil];
+}
+
+#pragma mark - tableView delegate dataSource\
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
