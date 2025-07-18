@@ -26,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSArray <PPSpecVersionModel *>*versions;
 @property (nonatomic, strong) PPSpecVersionModel *selectedVersion;
 
+- (void)reloadVersions;
+
 @end
 
 NS_ASSUME_NONNULL_END

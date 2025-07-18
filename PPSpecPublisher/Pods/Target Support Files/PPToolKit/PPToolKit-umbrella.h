@@ -12,6 +12,8 @@
 
 #import "NSArray+ppEx.h"
 #import "NSDictionary+ppEx.h"
+#import "NSFileManager+ppEx.h"
+#import "NSObject+ppEx.h"
 #import "NSString+ppEx.h"
 #import "UIButton+ppEx.h"
 #import "UILabel+ppEx.h"
@@ -22,6 +24,8 @@
 #import "PPToolKit.h"
 #import "NSArray+ppEx.h"
 #import "NSDictionary+ppEx.h"
+#import "NSFileManager+ppEx.h"
+#import "NSObject+ppEx.h"
 #import "NSString+ppEx.h"
 #import "UIButton+ppEx.h"
 #import "UILabel+ppEx.h"

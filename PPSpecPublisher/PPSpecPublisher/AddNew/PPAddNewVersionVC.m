@@ -28,7 +28,7 @@
     [super viewDidAppear:animated];
     
     if (nil == self.toCreateVersion || self.toCreateVersion.length == 0) {
-//        [self doShowAlertToInputVersion];
+        [self doShowAlertToInputVersion];
     }
 }
 
@@ -52,16 +52,16 @@
     self.client.onResponse = ^(NSString *response) {
         dispatch_async(dispatch_get_main_queue(), ^{
             NSLog(@"收到回传：%@", response);
-            // 更新 UI，例如 TextView
-//            5weakSelf.outputTextView.string = response;
+            // TODO: 后期添加队列, 一条发送, 一条接收
+            [weakSelf doGetPodspecJsonFromSocket:response];
         });
     };
     
     self.client.onDidConnect = ^{
         // 尝试发一些指令
 //        NSString *command = @"ls -l";
-        NSString *spec = weakSelf.selectedSpecModel.selectedVersion.podspecPath;
-        [weakSelf getSourceUrlFromSpecPath:spec];
+//        NSString *spec = weakSelf.selectedSpecModel.selectedVersion.podspecPath;
+//        [weakSelf getSourceUrlFromSpecPath:spec];
     };
 }
 
@@ -92,12 +92,12 @@
 
 #pragma mark - socket
 
+/// 根据当前的一次版本, 获取github地址
 - (void)getSourceUrlFromSpecPath:(NSString *)specPath {
     NSLog(@"======== 当前仓库spec 文件地址: %@", specPath);
     NSString *command = [NSString stringWithFormat:@"/opt/homebrew/bin/pod ipc spec %@", specPath];
     [self.client sendCommand:command];
 };
-
 
 #pragma mark - action
 
@@ -138,20 +138,9 @@
     }
     self.toCreateVersion = toCreateVersion;
     
-    // 这里我们先去github获取仓库地址, tag对应的版本, 然后下载podspec文件, 解析
-    [self doTryToRequestFromGithubWithVersion:^(BOOL requestSueccess) {
-        if (requestSueccess) {
-            
-        } else {
-            // 尝试提示, 让用户选择前面的模版
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"错误" message:@"暂未获取到远程仓库中的podspec, 你可以继续选择过去版本作为模版进行编辑" preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                [self doShowSelectPreVersionSheet];
-            }];
-            [alert addAction:okAction];
-            [self presentViewController:alert animated:YES completion:nil];
-        }
-    }];
+    // 先尝试拿到仓库的地址, 用socket发给CommanHelper
+    NSString *spec = self.selectedSpecModel.selectedVersion.podspecPath;
+    [self getSourceUrlFromSpecPath:spec];
 }
 
 - (void)doShowSelectPreVersionSheet {
@@ -170,20 +159,100 @@
     [self presentViewController:alert animated:YES completion:nil];
 }
 
-- (void)doTryToRequestFromGithubWithVersion:(void (^)(BOOL requestSueccess))completion {
-    
-    
-    // TODO: 根据
-    NSString *sourceUrl = self.selectedSpecModel.selectedVersion.sourceUrl;
-    
-    if (completion) {
-        completion(NO);
+- (void)doGetPodspecJsonFromSocket:(NSString *)response {
+    // 这里是我将podspec文件转成了json
+    NSDictionary *jsonDic = [NSJSONSerialization getJsonFromString:response];
+    if (nil == jsonDic || ![jsonDic isKindOfClass:[NSDictionary class]]) {
+        NSLog(@"======== podspec 转换成json失败");
+        return;
     }
+    // 拿到json
+    NSString *homePage = jsonDic[@"homepage"];
+    if (NSStringLengthOfString(homePage) == 0) {
+        NSLog(@"======== 未获取到homepage");
+        return;
+    }
+    
+    // https://github.com/Garenge/PPCatalystTool
+    // https://github.com/Garenge/PPCatalystTool/blob/1.0.9/PPCatalystTool.podspec
+//    https://raw.githubusercontent.com/Garenge/PPCatalystTool/refs/tags/1.0.9/PPCatalystTool.podspec
+    NSString *rawPath = [NSString stringWithFormat:@"%@/refs/tags/%@/%@.podspec", [homePage stringByReplacingOccurrencesOfString:@"https://github.com" withString:@"https://raw.githubusercontent.com"], self.toCreateVersion, self.selectedSpecModel.title];
+    // 这里我们先去github获取仓库地址, tag对应的版本, 然后下载podspec文件, 解析
+    [self doTryToRequestFromGithubWithUrl:rawPath completion:^(BOOL requestSueccess) {
+        if (requestSueccess) {
+            
+        } else {
+            // 尝试提示, 让用户选择前面的模版
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"错误" message:@"暂未获取到远程仓库中的podspec, 你可以继续选择过去版本作为模版进行编辑" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                [self doShowSelectPreVersionSheet];
+            }];
+            [alert addAction:okAction];
+            [self presentViewController:alert animated:YES completion:nil];
+        }
+    }];
+}
+
+- (void)doTryToRequestFromGithubWithUrl:(NSString *)url completion:(void (^)(BOOL requestSueccess))completion {
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+    NSURLSessionDataTask *dataTask = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        if (error || nil == data || data.length == 0) {
+            NSLog(@"获取github信息失败");
+            if (completion) {
+                completion(NO);
+            }
+            return;
+        }
+        
+        NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.textView.text = result;
+        });
+    }];
+    [dataTask resume];
 }
 
 - (void)doConfirmToCreateVersion:(UIBarButtonItem *)sender {
     // TODO: 创建文件夹, 保存podspec文件, 然后打开fork软件, 准备提交
+    NSString *message = [NSString stringWithFormat:@"你确定要创建版本 %@ 吗？", self.toCreateVersion];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        // 这里可以进行创建版本的操作
+        NSLog(@"确认创建版本: %@", self.toCreateVersion);
+        // 这里可以将文本内容保存到文件中
+        [self doCreateLocalFileWithVersion:self.toCreateVersion podspecContent:self.textView.text];
+        
+    }];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    [alert addAction:confirmAction];
+    [alert addAction:cancelAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)doCreateLocalFileWithVersion:(NSString *)version podspecContent:(NSString *)podspecContent {
+    // 这里可以将podspec内容保存到本地文件
+    NSString *folderPath = [self.selectedSpecModel.path stringByAppendingPathComponent:version];
+    [[NSFileManager defaultManager] createDirectoryAtPath:folderPath withIntermediateDirectories:YES attributes:nil error:nil];
     
+    NSString *specName = [NSString stringWithFormat:@"%@.podspec", self.selectedSpecModel.title];
+    NSString *filePath = [folderPath stringByAppendingPathComponent:specName];
+    
+    BOOL success = [[NSFileManager defaultManager] doReplaceFile:filePath withNewFileContent:[podspecContent dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    if (success) {
+        
+        if (self.didCompleteAddNewVersion) {
+            self.didCompleteAddNewVersion(self.toCreateVersion);
+        }
+        NSLog(@"成功创建版本文件: %@", filePath);
+        
+        [[PPCatalystHandle sharedPPCatalystHandle] openFileOrDirWithPath:filePath];
+        
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        NSLog(@"创建版本文件失败");
+    }
 }
 
 @end

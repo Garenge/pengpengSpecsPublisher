@@ -205,6 +205,8 @@
         return;
     }
     
+    [selectedSpecModel reloadVersions];
+    
     NSLog(@"Selected Spec: %@, Path: %@", selectedSpecModel.title, selectedSpecModel.path);
     
     self.selectedVersionModel = selectedSpecModel.versions.firstObject;
@@ -254,6 +256,10 @@
 - (void)doClickedAddNewVersionAction:(UIButton *)sender {
     PPAddNewVersionVC *vc = [[PPAddNewVersionVC alloc] init];
     vc.selectedSpecModel = self.selectedSpecModel;
+    
+    vc.didCompleteAddNewVersion = ^(NSString * _Nonnull version) {
+        self.selectedSpecModel = self.selectedSpecModel;
+    };
     
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
     [self presentViewController:navi animated:YES completion:nil];

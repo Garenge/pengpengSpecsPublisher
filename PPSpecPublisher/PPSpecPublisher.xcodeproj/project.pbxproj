@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D27BE042E2A982300729DA2 /* PPCatalystPlugin.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 9D27BE032E2A982300729DA2 /* PPCatalystPlugin.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D6DBA212E235FAC00138692 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6DBA102E235FAC00138692 /* AppDelegate.m */; };
 		9D6DBA222E235FAC00138692 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6DBA152E235FAC00138692 /* main.m */; };
 		9D6DBA232E235FAC00138692 /* PPSpecModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6DBA192E235FAC00138692 /* PPSpecModel.m */; };
@@ -24,6 +25,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		9D27BE052E2A982300729DA2 /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9D27BE042E2A982300729DA2 /* PPCatalystPlugin.bundle in Embed PlugIns */,
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D6DBA3E2E27E6A400138692 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -40,6 +52,7 @@
 		4A8143A8F921A74231C51AF7 /* Pods-CommandHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommandHelper.release.xcconfig"; path = "Target Support Files/Pods-CommandHelper/Pods-CommandHelper.release.xcconfig"; sourceTree = "<group>"; };
 		774669FDF5667821BD2F7E09 /* Pods-CommandHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommandHelper.debug.xcconfig"; path = "Target Support Files/Pods-CommandHelper/Pods-CommandHelper.debug.xcconfig"; sourceTree = "<group>"; };
 		953A70A163C0BEFCBE801210 /* Pods-PPSpecPublisher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPSpecPublisher.release.xcconfig"; path = "Target Support Files/Pods-PPSpecPublisher/Pods-PPSpecPublisher.release.xcconfig"; sourceTree = "<group>"; };
+		9D27BE032E2A982300729DA2 /* PPCatalystPlugin.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = PPCatalystPlugin.bundle; path = ../../PPCatalystTool/PPCatalystPlugin/Products/PPCatalystPlugin.bundle; sourceTree = "<group>"; };
 		9D6DB9C12E235C3A00138692 /* PPSpecPublisher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPSpecPublisher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6DBA0F2E235FAC00138692 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9D6DBA102E235FAC00138692 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				EC5FC114CD4046DC26380243 /* Pods_PPSpecPublisher.framework */,
+				9D27BE032E2A982300729DA2 /* PPCatalystPlugin.bundle */,
 				EA6CA3B6A5381FCD888D0F5D /* libPods-CommandHelper.a */,
 			);
 			name = Frameworks;
@@ -216,6 +230,7 @@
 				9D6DB9BE2E235C3A00138692 /* Frameworks */,
 				9D6DB9BF2E235C3A00138692 /* Resources */,
 				BBE7BA6783A2AA60E0CB823A /* [CP] Embed Pods Frameworks */,
+				9D27BE052E2A982300729DA2 /* Embed PlugIns */,
 			);
 			buildRules = (
 			);

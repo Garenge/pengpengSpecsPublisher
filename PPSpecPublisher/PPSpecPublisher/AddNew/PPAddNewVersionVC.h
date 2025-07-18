@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) PPSpecModel *selectedSpecModel;
 
+@property (nonatomic, copy) void(^didCompleteAddNewVersion)(NSString *version);
+
 @end
 
 NS_ASSUME_NONNULL_END
