@@ -196,18 +196,23 @@
 - (void)doTryToRequestFromGithubWithUrl:(NSString *)url completion:(void (^)(BOOL requestSueccess))completion {
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
     NSURLSessionDataTask *dataTask = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        
-        if (error || nil == data || data.length == 0) {
-            NSLog(@"获取github信息失败");
+
+        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+        if (error || nil == data || data.length == 0 || httpResponse.statusCode != 200) {
+            NSLog(@"获取github信息失败: %@, 状态码: %ld", error.localizedDescription, (long)httpResponse.statusCode);
+
             if (completion) {
-                completion(NO);
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    completion(NO);
+                });
             }
             return;
         }
-        
+
         NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         dispatch_async(dispatch_get_main_queue(), ^{
             self.textView.text = result;
+            completion(YES);
         });
     }];
     [dataTask resume];

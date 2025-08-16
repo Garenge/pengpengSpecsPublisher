@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D109D6E2E2D2542004842FF /* CommandHelper in Resources */ = {isa = PBXBuildFile; fileRef = 9D109D6D2E2D2542004842FF /* CommandHelper */; };
 		9D27BE042E2A982300729DA2 /* PPCatalystPlugin.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 9D27BE032E2A982300729DA2 /* PPCatalystPlugin.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D6DBA212E235FAC00138692 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6DBA102E235FAC00138692 /* AppDelegate.m */; };
 		9D6DBA222E235FAC00138692 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6DBA152E235FAC00138692 /* main.m */; };
@@ -23,6 +24,16 @@
 		BDD1F93E5AB64F1097D5912F /* libPods-CommandHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA6CA3B6A5381FCD888D0F5D /* libPods-CommandHelper.a */; };
 		E8894DA5E83AE420478657CD /* Pods_PPSpecPublisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5FC114CD4046DC26380243 /* Pods_PPSpecPublisher.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D27BE112E2BE3B100729DA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D6DB9B92E235C3A00138692 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D6DBA3F2E27E6A400138692;
+			remoteInfo = CommandHelper;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9D27BE052E2A982300729DA2 /* Embed PlugIns */ = {
@@ -52,6 +63,7 @@
 		4A8143A8F921A74231C51AF7 /* Pods-CommandHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommandHelper.release.xcconfig"; path = "Target Support Files/Pods-CommandHelper/Pods-CommandHelper.release.xcconfig"; sourceTree = "<group>"; };
 		774669FDF5667821BD2F7E09 /* Pods-CommandHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommandHelper.debug.xcconfig"; path = "Target Support Files/Pods-CommandHelper/Pods-CommandHelper.debug.xcconfig"; sourceTree = "<group>"; };
 		953A70A163C0BEFCBE801210 /* Pods-PPSpecPublisher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPSpecPublisher.release.xcconfig"; path = "Target Support Files/Pods-PPSpecPublisher/Pods-PPSpecPublisher.release.xcconfig"; sourceTree = "<group>"; };
+		9D109D6D2E2D2542004842FF /* CommandHelper */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = CommandHelper; sourceTree = "<group>"; };
 		9D27BE032E2A982300729DA2 /* PPCatalystPlugin.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = PPCatalystPlugin.bundle; path = ../../PPCatalystTool/PPCatalystPlugin/Products/PPCatalystPlugin.bundle; sourceTree = "<group>"; };
 		9D6DB9C12E235C3A00138692 /* PPSpecPublisher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPSpecPublisher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6DBA0F2E235FAC00138692 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -159,6 +171,7 @@
 				9D6DBA1B2E235FAC00138692 /* PrefixHeader.pch */,
 				9D6DBA1C2E235FAC00138692 /* SceneDelegate.h */,
 				9D6DBA1D2E235FAC00138692 /* SceneDelegate.m */,
+				9D109D6D2E2D2542004842FF /* CommandHelper */,
 				9D6DBA2A2E235FB600138692 /* Model */,
 				9D6DBA1E2E235FAC00138692 /* ViewController.h */,
 				9D6DBA1F2E235FAC00138692 /* ViewController.m */,
@@ -235,6 +248,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				9D27BE122E2BE3B100729DA2 /* PBXTargetDependency */,
 			);
 			name = PPSpecPublisher;
 			productName = PPSpecPublisher;
@@ -301,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D109D6E2E2D2542004842FF /* CommandHelper in Resources */,
 				9D6DBA262E235FAC00138692 /* Assets.xcassets in Resources */,
 				9D6DBA282E235FAC00138692 /* LaunchScreen.storyboard in Resources */,
 				9D6DBA292E235FAC00138692 /* Main.storyboard in Resources */,
@@ -398,6 +413,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D27BE122E2BE3B100729DA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D6DBA3F2E27E6A400138692 /* CommandHelper */;
+			targetProxy = 9D27BE112E2BE3B100729DA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9D6DBA142E235FAC00138692 /* LaunchScreen.storyboard */ = {
