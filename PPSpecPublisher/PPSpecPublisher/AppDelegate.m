@@ -6,16 +6,31 @@
 //
 
 #import "AppDelegate.h"
+#import "CommandClient.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) CommandClient *commandClient;
 
 @end
 
 @implementation AppDelegate
 
+- (CommandClient *)commandClient {
+    if (!_commandClient) {
+        _commandClient = [[CommandClient alloc] init];
+    }
+    return _commandClient;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // 应用启动时立即检查CommandHelper连接
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.commandClient connectToHelper];
+    });
+    
     return YES;
 }
 

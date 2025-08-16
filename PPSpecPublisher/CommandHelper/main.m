@@ -25,9 +25,76 @@
     return _connectedClients;
 }
 
+// 检查端口是否被占用
+- (BOOL)isPortOccupied:(uint16_t)port {
+    GCDAsyncSocket *testSocket = [[GCDAsyncSocket alloc] initWithDelegate:nil delegateQueue:dispatch_get_main_queue()];
+    NSError *error = nil;
+    BOOL success = [testSocket acceptOnPort:port error:&error];
+    [testSocket disconnect];
+    return !success;
+}
+
+// 杀死占用指定端口的进程
+- (void)killProcessesUsingPort:(uint16_t)port {
+    NSLog(@"🔍 检查端口 %d 是否被占用...", port);
+    
+    if (![self isPortOccupied:port]) {
+        NSLog(@"✅ 端口 %d 未被占用", port);
+        return;
+    }
+    
+    NSLog(@"⚠️ 端口 %d 被占用，正在查找并杀死相关进程...", port);
+    
+    // 使用lsof命令查找占用端口的进程
+    NSTask *lsofTask = [[NSTask alloc] init];
+    lsofTask.launchPath = @"/usr/sbin/lsof";
+    lsofTask.arguments = @[@"-ti", [NSString stringWithFormat:@":%d", port]];
+    
+    NSPipe *pipe = [NSPipe pipe];
+    lsofTask.standardOutput = pipe;
+    lsofTask.standardError = pipe;
+    
+    [lsofTask launch];
+    [lsofTask waitUntilExit];
+    
+    NSData *data = [[pipe fileHandleForReading] readDataToEndOfFile];
+    NSString *output = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    
+    if (output.length > 0) {
+        NSArray *pids = [output componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        pids = [pids filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"length > 0"]];
+        
+        for (NSString *pid in pids) {
+            NSLog(@"🔫 杀死进程 PID: %@", pid);
+            
+            NSTask *killTask = [[NSTask alloc] init];
+            killTask.launchPath = @"/bin/kill";
+            killTask.arguments = @[@"-9", pid];
+            
+            [killTask launch];
+            [killTask waitUntilExit];
+        }
+        
+        // 等待一下让进程完全退出
+        [NSThread sleepForTimeInterval:0.5];
+        
+        // 再次检查端口是否释放
+        if (![self isPortOccupied:port]) {
+            NSLog(@"✅ 端口 %d 已成功释放", port);
+        } else {
+            NSLog(@"❌ 端口 %d 仍然被占用", port);
+        }
+    } else {
+        NSLog(@"⚠️ 未找到占用端口 %d 的进程", port);
+    }
+}
+
 - (instancetype)init {
     self = [super init];
     if (self) {
+        // 在启动前检查并杀死占用端口的进程
+        [self killProcessesUsingPort:12345];
+        
         self.serverSocket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
         NSError *error = nil;
         if (![self.serverSocket acceptOnPort:12345 error:&error]) {
