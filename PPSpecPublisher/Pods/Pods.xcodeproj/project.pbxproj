@@ -3,265 +3,271 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 71;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0366299D924B058B432CDFB00F209EF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086E3A4FDCAFA093166CE8F490EF7A0B /* Foundation.framework */; };
 		043F39A7F8CB5FE1FCAA2DF84B27FBD0 /* Pods-PPSpecPublisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E0DF9C77119964F44FDCFE9CF2D37F0 /* Pods-PPSpecPublisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0585B33FAFC308CD61B9413054303203 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B915CCAD4F14AFADEA565EC76F67F88 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05E2B7C1DB7528A0BBEA1521BE0DBAF1 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = BD0EEA67A705257FE7ED3771B6D31C44 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1698AD89BA83B3AD750CB8B07E57C423 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 0364FAD071CE2C887A8534B811529A52 /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		174E266B36F78270D68A22E7AAC87E63 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B9DAD47B766D08A258BD2F37EA401D /* GCDAsyncSocket.m */; };
 		1B586C5F8F7679434996C7788CDAFAD6 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B915CCAD4F14AFADEA565EC76F67F88 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2AFC5D92465CBC3DECD59684ABDD0FBC /* UIButton+ppEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BD487EEE453D9BACE4EEEE012C40AE2 /* UIButton+ppEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B691D95A47090B507CE0F81ABE0B5F8 /* PPToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CB8D42A35043500D3F828F83540292B3 /* PPToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AFC5D92465CBC3DECD59684ABDD0FBC /* UIButton+ppEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 202A5223826225FB3A7AFC4F05038ACA /* UIButton+ppEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B691D95A47090B507CE0F81ABE0B5F8 /* PPToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B7A5B25D0CEAE0C65B2D4DBE5B1D8FAF /* PPToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D95BBEFA74BC560612A719248DD2639 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086E3A4FDCAFA093166CE8F490EF7A0B /* Foundation.framework */; };
 		342EC963FD11515145411D042E60209F /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9826A5DD9A3C4C2F8F7EBD1945381 /* GCDAsyncUdpSocket.m */; };
 		37B890ABDC7DD441E6AA662325D412E6 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 66011B12DAD1F37340CB7872380B8BF5 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3986E346146906122AB059590CEC82B8 /* NSArray+ppEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE1351F186F14C85D1DFD3F00C6873A /* NSArray+ppEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		426005CD3D6CC02E6CF9ADD68DA56940 /* NSFileManager+ppEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDEB3793BF1E7D504C21E0AEA72ABA9 /* NSFileManager+ppEx.m */; };
-		4300567439C76CC60C462B4F4337B64B /* PPScrollContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1FEE52A8143DCEB07478B3F57A0993 /* PPScrollContentView.m */; };
+		3986E346146906122AB059590CEC82B8 /* NSArray+ppEx.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B99A0160B34ABD0A8F8232D748AF7C /* NSArray+ppEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		426005CD3D6CC02E6CF9ADD68DA56940 /* NSFileManager+ppEx.m in Sources */ = {isa = PBXBuildFile; fileRef = B07D1C60E64ACAD813F18F5CFC1E21FC /* NSFileManager+ppEx.m */; };
+		4300567439C76CC60C462B4F4337B64B /* PPScrollContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98CEBD80DF57B6865995A52C3E1E75 /* PPScrollContentView.m */; };
 		4571A0EA37DC84F39E3830D38A1531AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD68B8AA08956D97D306AC7A15E165A /* UIKit.framework */; };
-		4EC0A43B6162C883B7972345A8038ED4 /* UIImage+ppEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A17B86B101618ED9CE484E034052C0C /* UIImage+ppEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5326E65DE38760FB7D652F1FB851BC2B /* UIView+ppEx.h in Headers */ = {isa = PBXBuildFile; fileRef = FF3C6024ED17E9A89A499C0B8A210A8F /* UIView+ppEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EC0A43B6162C883B7972345A8038ED4 /* UIImage+ppEx.h in Headers */ = {isa = PBXBuildFile; fileRef = B543BD341E74D60FDB8222A7EF6DBDFE /* UIImage+ppEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5326E65DE38760FB7D652F1FB851BC2B /* UIView+ppEx.h in Headers */ = {isa = PBXBuildFile; fileRef = A594B939FF38B962A8F653E1B6EE55EF /* UIView+ppEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		56E800EB3B2BE8AE0BA45A30974D7920 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4C092B123255DC20541D566803164E /* Masonry-dummy.m */; };
 		5B08596E856E4CC2F34A8A2372F9F764 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7540C6E27BA731F8420FC5ECFF69A6 /* NSArray+MASAdditions.m */; };
 		5F45735DF355530CC955066D3C007E19 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 04F75D8BE3C83DB4B486EED54EB4DC40 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61507E402F1F7C58BF119995A0479A22 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = BE4C0BF2BAB40138B94E4EED0ADF1414 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6253C4A1DFB1E51C3D4745181638613E /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 0364FAD071CE2C887A8534B811529A52 /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		695C085B679395B301611C7411D54BF7 /* NSString+ppEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AEF6DCE6815EB7C5C19D23677780B7 /* NSString+ppEx.m */; };
-		6EB830E1ABEB00A05D6511A8FFC5B606 /* Config.h in Headers */ = {isa = PBXBuildFile; fileRef = 108806F738650AFDCFF620E60B84D0B4 /* Config.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F73E5EE93324E5A150A45AB76323A65 /* PPScrollContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = BDC43D32AACAC0354200D783494EC9A4 /* PPScrollContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7246B57AE951153EBA8E30BDDB2231E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086E3A4FDCAFA093166CE8F490EF7A0B /* Foundation.framework */; };
-		75CCF6D33DE918CFC4E39395A7F653B0 /* NSString+ppEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 188F690664C57D86A33E41522FE51384 /* NSString+ppEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69246EE2CB634D9CD919EE45349A6956 /* PPCatalystTool.docc in Sources */ = {isa = PBXBuildFile; fileRef = 2CDEF298C3BB898958EAA7A6E9FFF4D9 /* PPCatalystTool.docc */; };
+		695C085B679395B301611C7411D54BF7 /* NSString+ppEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F36827340D78F5F5D7E701561C6769E /* NSString+ppEx.m */; };
+		6EB830E1ABEB00A05D6511A8FFC5B606 /* Config.h in Headers */ = {isa = PBXBuildFile; fileRef = B8CA895A432A80AF08A0AD0A69652D02 /* Config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F73E5EE93324E5A150A45AB76323A65 /* PPScrollContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = DA75437C1095DD9CF81B7766A1AE425E /* PPScrollContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75CCF6D33DE918CFC4E39395A7F653B0 /* NSString+ppEx.h in Headers */ = {isa = PBXBuildFile; fileRef = B30944438669E0DAF856C359BAB85755 /* NSString+ppEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		772CF8E9CD02ECA4275B6173E2110E80 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 66ED0AF9662F3863877CA2CAA8FE2B1C /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		774D5939837495A357BEAE77222A088E /* NSFileManager+ppEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 50B77F84E76DD7A5C6B39EC15C83AB10 /* NSFileManager+ppEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78E91C8EF9D46EFDC9857EA26E96E32C /* PPCatalystPlugin.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 70F600CAA276284EECBE8088EF27FCC9 /* PPCatalystPlugin.bundle */; };
-		7BE31A2AF83E80F005AD46D883B19077 /* NSDictionary+ppEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E1A7D068BBAACB7A427BBE4CFDCF94 /* NSDictionary+ppEx.m */; };
+		774D5939837495A357BEAE77222A088E /* NSFileManager+ppEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 495024B3DFF6C20BCC986B2AAACF3C5D /* NSFileManager+ppEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BE31A2AF83E80F005AD46D883B19077 /* NSDictionary+ppEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C65EDFFA9F5D63C6C725786605EA6AD /* NSDictionary+ppEx.m */; };
 		7C5505A2D3F2A697A5F324787061F4B7 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F626F0D0C4E0254A1E50E37A6DC36422 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D17BFEEC5EA36EA0743BBA0722D95E5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFC4F547786286F5F9E3125B55D8016 /* CFNetwork.framework */; };
 		813BE4C96A6D39C13EC50C6CD164F0AF /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 564B68A0D7F639368C2EA8E4C737CC7F /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		852305C0187AEB4ECA7515753AC3DFF2 /* Pods-PPSpecPublisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2BCE594EF9D75C930D8431D260054C /* Pods-PPSpecPublisher-dummy.m */; };
-		853D7EE00F684AAFEBF2E2D640EE0C99 /* PPCatalystHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B78A9CD481EFECE5F7E9E36EFDA00B5 /* PPCatalystHandle.m */; };
-		85D045D60811EAF9E2CA345070D82960 /* PPCatalystTool.h in Headers */ = {isa = PBXBuildFile; fileRef = FC2E90E3B2D8BDDF421872CA2E590DAC /* PPCatalystTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B063C6ECA29E7704F7DB64C29F47A37 /* UIView+Drop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B85271421C4F6DE541E473E84A0DD /* UIView+Drop.m */; };
 		8C6C7E25C5A24C936F81823978190E96 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 233809E061751023E748AC0FAF679BB7 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8DFD1BCA1348D7ACABBF646FA7BDE74E /* NSObject+ppEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A601869B262A03CA498019267DC012 /* NSObject+ppEx.m */; };
-		8E8EC8A7A9CFDBB87B3755FDAD1B98DB /* PPAlertBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 229E78E223DB1EF34D2D45E7148CAA3A /* PPAlertBaseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DFD1BCA1348D7ACABBF646FA7BDE74E /* NSObject+ppEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 06879D5DA006DAA79966CB5A31F21F43 /* NSObject+ppEx.m */; };
+		8E8EC8A7A9CFDBB87B3755FDAD1B98DB /* PPAlertBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 69991C7A36A1F2DD11B81DE391208B21 /* PPAlertBaseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FF7B6477BFA6E6ABA168E1417291D5F /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 35740DB2D35B746339E5C34A448D2FF1 /* MASCompositeConstraint.m */; };
-		928469235A17AE8992E50B521C79C800 /* UIView+ppEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 864EA7091C823F0E2767C29B98DC77B1 /* UIView+ppEx.m */; };
-		A00009E35105D225E959F2BCA0BEB5B9 /* PPCatalystTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D531E3CBB45907F42483BB8DDEB3948A /* PPCatalystTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0A6985BA8F4E918F6596BE9BFE6CB14 /* NSDictionary+ppEx.h in Headers */ = {isa = PBXBuildFile; fileRef = DB46C44A447A9655A2D65DB2F4F13FA8 /* NSDictionary+ppEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA2E58D4931675649C5F42F7C7B2A7AE /* NSObject+ppEx.h in Headers */ = {isa = PBXBuildFile; fileRef = AE8B77831E60E18B4BF472CF026DF5C5 /* NSObject+ppEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE013CD871A6C84314CCEFEF3E72031D /* UIButton+ppEx.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BFF38DF36CA33D686C3F09F2A34D6E /* UIButton+ppEx.m */; };
+		928469235A17AE8992E50B521C79C800 /* UIView+ppEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 78758429B115399A8E5AB8B9BC96AFF2 /* UIView+ppEx.m */; };
+		975DBE0B5F537469F2A77BB8E626F4A7 /* PPCatalystPlugin.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D9CDF652EDE591B0D74D6FAF5EC6D065 /* PPCatalystPlugin.bundle */; };
+		A0A6985BA8F4E918F6596BE9BFE6CB14 /* NSDictionary+ppEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 8351159C7F32F61967657844FCAD257C /* NSDictionary+ppEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A24D7E30FB94294E4D5B5C68237E1E38 /* PPCatalystHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1FA699218EDFCBDFF2BC1779E3CC85 /* PPCatalystHandle.m */; };
+		AA2E58D4931675649C5F42F7C7B2A7AE /* NSObject+ppEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B8EC8ACC19ED11C79C8848CE7C8473 /* NSObject+ppEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE013CD871A6C84314CCEFEF3E72031D /* UIButton+ppEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D91129454450FA67CF92BDE19E853F4 /* UIButton+ppEx.m */; };
 		AE7B02645B8F769CA5F215EE8F7CC5B0 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 17129A1E1E5CD804CEF85690BA3A64B8 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2674ACFFC3996A10FF499146A7E8169 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FAC8A2CA133D58ECCE1DAFCA6B012C /* ReplaceMe.m */; };
+		AEA1FE41B3448810F73D027EAEEBC031 /* UIView+Drop.md in Sources */ = {isa = PBXBuildFile; fileRef = A28D9F0D2121E7BD4F9631AA31BDFC9C /* UIView+Drop.md */; };
+		B2674ACFFC3996A10FF499146A7E8169 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = F02D83C0423FFDF4564FB3FF987B1B48 /* ReplaceMe.m */; };
 		B59E60FBC9665FC1061B88B8E6FD9FAF /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 831D0EE1ABF878AD0F127E6EAE26DB02 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B680C2604BD8BC9644AE7C67BC46B9BB /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F87E884C91E6A581B6BF108C651BA7C /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA8F9A298B3F3BC07258CC8B92109BBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086E3A4FDCAFA093166CE8F490EF7A0B /* Foundation.framework */; };
 		BA904ABA8ED36CC4E5EB2B2004CA1F18 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = E78D4AD71C8986F338666BBA39164A33 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD9B504705E0C306C529AFC3DED35D0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086E3A4FDCAFA093166CE8F490EF7A0B /* Foundation.framework */; };
-		BF162181253F5BA02525694D4BC9500C /* UILabel+ppEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EA91CD6C59F8E8B731DDA96456802A /* UILabel+ppEx.m */; };
+		BF162181253F5BA02525694D4BC9500C /* UILabel+ppEx.m in Sources */ = {isa = PBXBuildFile; fileRef = C508C0076F92D0DBAC6639A457287DFB /* UILabel+ppEx.m */; };
 		BF22D137EF6324675FA50080C5D93C00 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C1E35D13CFDD743DBE64390C846BF8 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C0D68B275C366F79C9C9F5A3AE7502D2 /* PPCatalystHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = E64DE9E127055BDF9453232542926D96 /* PPCatalystHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C0D7879E9B33C7C135DB1E33AD32371F /* PPAlertBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 314138F5EA823AFE35342B9534E0DD81 /* PPAlertBaseView.m */; };
-		C163443DA2200FA4D1B0F7A635F46115 /* UIImage+ppEx.m in Sources */ = {isa = PBXBuildFile; fileRef = E6767752DE8F62911F8A56A5A0AA44BA /* UIImage+ppEx.m */; };
+		C0D7879E9B33C7C135DB1E33AD32371F /* PPAlertBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 819B70C161EC4F67CDD7FE248839FACC /* PPAlertBaseView.m */; };
+		C1294243EBE1324FDDB221EE20A77084 /* PPCatalystTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E411F41A248571EF6E63418A4C656A /* PPCatalystTool-dummy.m */; };
+		C163443DA2200FA4D1B0F7A635F46115 /* UIImage+ppEx.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CC0E57961AC8A0D674D7D8D8DEE3D /* UIImage+ppEx.m */; };
 		C2068AEACC2D9C7F1FFE41AA25B12A68 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E9E3A8AA4ADF394E3F4D071D2CF7D75 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2FE60A10C792613E45031AE6E851ECB /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A7F45FA9738083FDA199C0FBA289D /* MASViewConstraint.m */; };
-		C6E7D1CACE8BE893E1574A5EDF5557F1 /* NSArray+ppEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 3279941FC1CF1A99C2DFFB8A9AE41B91 /* NSArray+ppEx.m */; };
+		C6E7D1CACE8BE893E1574A5EDF5557F1 /* NSArray+ppEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E4C7A4E55011F8F5B87173990AF333 /* NSArray+ppEx.m */; };
+		C845B544515D1C9BEE37D6F6191555FE /* PPCatalystTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A5BDCCEF3F210F57424F1094F74BCB8 /* PPCatalystTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C857B8D2D0BAA5A8A764F9E1C4B85807 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C279CFE4E16F1F5C4CB7851172E1583F /* ViewController+MASAdditions.m */; };
 		C8EC35DFB0945DBE2F2FF9ECFE6D9711 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79053331AC93B2CACC53A23EA75C37 /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		C90D8F495145A4CA750CB1046B8B533A /* PPToolKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AC3464D30F015BD5D23332FE33B68FA /* PPToolKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C90D8F495145A4CA750CB1046B8B533A /* PPToolKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7DFA09EAE47040A575B8AA8F18B1D52 /* PPToolKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9E19D164C26414115CC969ED9A303C1 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9551A9F9AF20CFB50E614B73A6458 /* MASLayoutConstraint.m */; };
 		CF1BB4F3AE36B73E0027E02DDBACD1CC /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B9DAD47B766D08A258BD2F37EA401D /* GCDAsyncSocket.m */; };
-		D2A86711648BE6BB6D07793FB08A0625 /* PPCatalystTool.docc in Sources */ = {isa = PBXBuildFile; fileRef = C26495CDFAE07205BF71494B11B5FAA7 /* PPCatalystTool.docc */; };
+		D102099991B7029029FF8990E43F5111 /* PPCatalystHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B4D5EDE7DB0CB4A208AA795A864B00 /* PPCatalystHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5F788EC80111906C2A15B213DBC226D /* Pods-CommandHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 262103748756272419106F39BC783395 /* Pods-CommandHelper-dummy.m */; };
 		D663837F4347AF58660EE6F7FD426ECE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086E3A4FDCAFA093166CE8F490EF7A0B /* Foundation.framework */; };
-		D6ECA5601E020C0D708BAF4E84B36F14 /* PPCatalystTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B363AC9DA751F537DE7A911E5948712 /* PPCatalystTool-dummy.m */; };
 		D788BA4B9E8186271BA75CA52B30502C /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C7878A409F3C4B7A73C8C0162D7200 /* View+MASAdditions.m */; };
 		DBA9500CBBA5FF6FCBBA115AE4D12152 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A24514A11AB40A7F90AF1435D7861 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC7629E08A7D995640EB1866C1921365 /* CocoaAsyncSocket-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A17BF4FCF72B2EBC9BDCAB0233DE8E /* CocoaAsyncSocket-library-dummy.m */; };
 		DF2B15402CE105F5A8CE48BBDCFFD5DD /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BB1C09120A60A1A9A4AB69E90E6116 /* MASConstraint.m */; };
-		E48BD3F7BEFC000A925E2A44D61B3371 /* PPToolKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB01421EC73780F0CACC79B4D4785D2A /* PPToolKit-dummy.m */; };
-		E6B03A07F7BFDE6EC1064DB5A0B78E1C /* PPToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C089D3134E1C363474E7220D86DCD54 /* PPToolKit.m */; };
+		E48BD3F7BEFC000A925E2A44D61B3371 /* PPToolKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A678172D94F5EF40676B07A6E862D5 /* PPToolKit-dummy.m */; };
+		E6B03A07F7BFDE6EC1064DB5A0B78E1C /* PPToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBA0A120726F3594E9D72BA00D0EBAA /* PPToolKit.m */; };
 		E930A5612DC6D120BE040AD17C6D1BCD /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A96D26001DCEFE53F330C9041B562C /* MASViewAttribute.m */; };
+		E9F9A28B4AC812A9923B36234B8062A1 /* UIView+Drop.h in Headers */ = {isa = PBXBuildFile; fileRef = 975E73966809B16B5357342A76E2BC9A /* UIView+Drop.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC9B34262AED632D7EFB49804337648E /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = FBDB4126395A133A59C5D87B0AD0A633 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFF66385F4FCEBA1CBF48BD4015882D7 /* UILabel+ppEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 0804E63CF57124EB81CA034D7ABDA0CC /* UILabel+ppEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFF66385F4FCEBA1CBF48BD4015882D7 /* UILabel+ppEx.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D7B3B6F730D7893DD4C5F3DFD91DA3 /* UILabel+ppEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F25774C6A66B0AC99C41FC74051BA549 /* CocoaAsyncSocket-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B96156F2263D5EF7A6EA6D50B3A8BD /* CocoaAsyncSocket-framework-dummy.m */; };
 		F5EFA893E9DE168A3254D09F139DEA34 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9826A5DD9A3C4C2F8F7EBD1945381 /* GCDAsyncUdpSocket.m */; };
 		F60F91F5580DC4D4DC91DC439271D8CB /* CocoaAsyncSocket-framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E4D722095F9A80CC6C30801A7192B36 /* CocoaAsyncSocket-framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6D1C960368EB1E067ABD0BFF707FC56 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = F9EBEE03D7548ADE3218C1ED7F4346CB /* MASConstraintMaker.m */; };
+		FB56D446DACE9CD4E1A31E480538D2ED /* PPCatalystTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F93E4DAEEABA1561FD3936EF1405F4B5 /* PPCatalystTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEF22ABB334D9B02007E77EA0E79F491 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8A60CE298636457C15260C815A7924 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		073E7180AFCB34837D1D93AAE0E5F01B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 06295FCEC6C19B4DD42C8CF5B234560B;
-			remoteInfo = "CocoaAsyncSocket-framework";
-		};
-		0EF6B3A550D2D3DBCC99C04DB1C984E9 /* PBXContainerItemProxy */ = {
+		1B2F1009F756EC96C23FC0663F58C3F2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
 			remoteInfo = Masonry;
 		};
-		2977B3CFB5C46DC66639AA57B410342C /* PBXContainerItemProxy */ = {
+		37F33A97385D91828F96D56650F52256 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F343808A707AB3BDFB01DD96DBEA683C;
 			remoteInfo = PPCatalystTool;
 		};
-		3C522C485CF425B138DDE4AEE8056692 /* PBXContainerItemProxy */ = {
+		5EE741EA67631DC195673EC2C94D69AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8A548C3E150FA9B7FA852F7714AC8CBB;
-			remoteInfo = PPToolKit;
+			remoteGlobalIDString = 06295FCEC6C19B4DD42C8CF5B234560B;
+			remoteInfo = "CocoaAsyncSocket-framework";
 		};
-		566322B5B042993B7EB2C4574D5DAE56 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
-			remoteInfo = Masonry;
-		};
-		D97E7A86CB36E2F284049DD3DD999F53 /* PBXContainerItemProxy */ = {
+		694E042B86A1474667348DCBF25E2993 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F3224BC9E53D936CE2343B07DB3E7B38;
 			remoteInfo = "CocoaAsyncSocket-library";
 		};
+		C19645993D844BA52F9B99462C50E957 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
+		EBC0DFA2C4F31F8951C87E45CB132D71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A548C3E150FA9B7FA852F7714AC8CBB;
+			remoteInfo = PPToolKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00F63504296C63CD741C3555EB5BCB1A /* PPToolKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PPToolKit.modulemap; sourceTree = "<group>"; };
 		0364FAD071CE2C887A8534B811529A52 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
-		039EBB1ABA581D4E6A410A5F4BAE39D6 /* PPCatalystTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PPCatalystTool.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		04F75D8BE3C83DB4B486EED54EB4DC40 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
 		05FAF88C6B9824122BCE42DAD562A7C6 /* Pods-PPSpecPublisher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PPSpecPublisher.debug.xcconfig"; sourceTree = "<group>"; };
-		0804E63CF57124EB81CA034D7ABDA0CC /* UILabel+ppEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UILabel+ppEx.h"; sourceTree = "<group>"; };
+		06879D5DA006DAA79966CB5A31F21F43 /* NSObject+ppEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ppEx.m"; sourceTree = "<group>"; };
 		086E3A4FDCAFA093166CE8F490EF7A0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		08A601869B262A03CA498019267DC012 /* NSObject+ppEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ppEx.m"; sourceTree = "<group>"; };
-		0B906694C902F6977538A2BA1398E827 /* PPToolKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PPToolKit.debug.xcconfig; sourceTree = "<group>"; };
+		09B5880CE0BAD2AE3AD6A2818FA811BE /* PPToolKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PPToolKit-Info.plist"; sourceTree = "<group>"; };
 		0C2BEC5071153E5B8EE7EBC13EE6590C /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
 		0DC09A03370E3DEB0AED3A79C5F7C851 /* Pods-PPSpecPublisher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PPSpecPublisher-Info.plist"; sourceTree = "<group>"; };
-		0E2BDE443ABAD3EFC14F6F7548AE17D4 /* PPCatalystTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PPCatalystTool-Info.plist"; sourceTree = "<group>"; };
 		0EB94371DE7957C77087603D5ED589C5 /* CocoaAsyncSocket-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-framework-prefix.pch"; sourceTree = "<group>"; };
 		0F6D76D90CCF8106B572DE2B88E67789 /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
-		108806F738650AFDCFF620E60B84D0B4 /* Config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Config.h; path = PPToolKit/Classes/Config.h; sourceTree = "<group>"; };
 		12C1E35D13CFDD743DBE64390C846BF8 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		14AEF6DCE6815EB7C5C19D23677780B7 /* NSString+ppEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+ppEx.m"; sourceTree = "<group>"; };
 		14C7878A409F3C4B7A73C8C0162D7200 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
 		16A17BF4FCF72B2EBC9BDCAB0233DE8E /* CocoaAsyncSocket-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CocoaAsyncSocket-library-dummy.m"; path = "../CocoaAsyncSocket-library/CocoaAsyncSocket-library-dummy.m"; sourceTree = "<group>"; };
 		17129A1E1E5CD804CEF85690BA3A64B8 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
-		188F690664C57D86A33E41522FE51384 /* NSString+ppEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+ppEx.h"; sourceTree = "<group>"; };
-		1923E8A4F41E6B725FFFA16E63D83AEF /* PPToolKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PPToolKit; path = PPToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A17B86B101618ED9CE484E034052C0C /* UIImage+ppEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+ppEx.h"; sourceTree = "<group>"; };
-		1AC3464D30F015BD5D23332FE33B68FA /* PPToolKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PPToolKit-umbrella.h"; sourceTree = "<group>"; };
-		1B363AC9DA751F537DE7A911E5948712 /* PPCatalystTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PPCatalystTool-dummy.m"; sourceTree = "<group>"; };
+		1923E8A4F41E6B725FFFA16E63D83AEF /* PPToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PPToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A8B85271421C4F6DE541E473E84A0DD /* UIView+Drop.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Drop.m"; path = "PPCatalystTool/PPCatalystTool/UIView+Drop.m"; sourceTree = "<group>"; };
 		1BBE1179CA7EA893960D22BE9540BE71 /* CocoaAsyncSocket-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CocoaAsyncSocket-framework.debug.xcconfig"; sourceTree = "<group>"; };
-		1C089D3134E1C363474E7220D86DCD54 /* PPToolKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PPToolKit.m; path = PPToolKit/Classes/PPToolKit.m; sourceTree = "<group>"; };
-		1DDEB3793BF1E7D504C21E0AEA72ABA9 /* NSFileManager+ppEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+ppEx.m"; sourceTree = "<group>"; };
 		1E7540C6E27BA731F8420FC5ECFF69A6 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		1FFED36A657123030ABB700256D73F15 /* Masonry */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		20EEC187E090EC1EBCE6E2A000D3CCBB /* PPToolKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PPToolKit-prefix.pch"; sourceTree = "<group>"; };
-		229E78E223DB1EF34D2D45E7148CAA3A /* PPAlertBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PPAlertBaseView.h; sourceTree = "<group>"; };
+		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		202A5223826225FB3A7AFC4F05038ACA /* UIButton+ppEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+ppEx.h"; sourceTree = "<group>"; };
 		233809E061751023E748AC0FAF679BB7 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		24B4D5EDE7DB0CB4A208AA795A864B00 /* PPCatalystHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPCatalystHandle.h; path = PPCatalystTool/PPCatalystTool/PPCatalystHandle.h; sourceTree = "<group>"; };
 		24DF9856FE612575B7D166657A602E4C /* CocoaAsyncSocket-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "CocoaAsyncSocket-library.debug.xcconfig"; path = "../CocoaAsyncSocket-library/CocoaAsyncSocket-library.debug.xcconfig"; sourceTree = "<group>"; };
+		25E4C7A4E55011F8F5B87173990AF333 /* NSArray+ppEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ppEx.m"; sourceTree = "<group>"; };
 		262103748756272419106F39BC783395 /* Pods-CommandHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CommandHelper-dummy.m"; sourceTree = "<group>"; };
-		26E1A7D068BBAACB7A427BBE4CFDCF94 /* NSDictionary+ppEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ppEx.m"; sourceTree = "<group>"; };
+		2CDEF298C3BB898958EAA7A6E9FFF4D9 /* PPCatalystTool.docc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.documentationcatalog; name = PPCatalystTool.docc; path = PPCatalystTool/PPCatalystTool/PPCatalystTool.docc; sourceTree = "<group>"; };
+		2F9601921CF940C5A41CA8A823855534 /* PPCatalystTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PPCatalystTool.modulemap; sourceTree = "<group>"; };
 		30B9DAD47B766D08A258BD2F37EA401D /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
-		314138F5EA823AFE35342B9534E0DD81 /* PPAlertBaseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PPAlertBaseView.m; sourceTree = "<group>"; };
-		3279941FC1CF1A99C2DFFB8A9AE41B91 /* NSArray+ppEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ppEx.m"; sourceTree = "<group>"; };
 		35740DB2D35B746339E5C34A448D2FF1 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		3699C2373FBAB4281906DC54774AD3AD /* PPCatalystTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PPCatalystTool-prefix.pch"; sourceTree = "<group>"; };
 		3755DC56DC71697A42C7978D269C4D0C /* CocoaAsyncSocket-framework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaAsyncSocket-framework-Info.plist"; sourceTree = "<group>"; };
-		3BD487EEE453D9BACE4EEEE012C40AE2 /* UIButton+ppEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+ppEx.h"; sourceTree = "<group>"; };
 		3FD68B8AA08956D97D306AC7A15E165A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		440665EE81A168F0A480FA47412FF29F /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
-		47AA0837805F9715435A63322F682A06 /* PPCatalystTool */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PPCatalystTool; path = PPCatalystTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47AA0837805F9715435A63322F682A06 /* PPCatalystTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PPCatalystTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		495024B3DFF6C20BCC986B2AAACF3C5D /* NSFileManager+ppEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+ppEx.h"; sourceTree = "<group>"; };
+		4C65EDFFA9F5D63C6C725786605EA6AD /* NSDictionary+ppEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ppEx.m"; sourceTree = "<group>"; };
 		4C7E0228A778D8409216AF24A8C7E850 /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
 		4E4D722095F9A80CC6C30801A7192B36 /* CocoaAsyncSocket-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-framework-umbrella.h"; sourceTree = "<group>"; };
-		50B77F84E76DD7A5C6B39EC15C83AB10 /* NSFileManager+ppEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+ppEx.h"; sourceTree = "<group>"; };
-		528BB0C50E6399174879BFFDF58163A9 /* CocoaAsyncSocket-framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "CocoaAsyncSocket-framework"; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		54FAC8A2CA133D58ECCE1DAFCA6B012C /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = PPToolKit/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		504695C997D9A2B3BC9C18A78ED05F2B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		528BB0C50E6399174879BFFDF58163A9 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		564B68A0D7F639368C2EA8E4C737CC7F /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
-		5B78A9CD481EFECE5F7E9E36EFDA00B5 /* PPCatalystHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PPCatalystHandle.m; path = PPCatalystTool/PPCatalystTool/PPCatalystHandle.m; sourceTree = "<group>"; };
+		596C85A4A1175784F824BAAE648B73E6 /* PPToolKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PPToolKit.debug.xcconfig; sourceTree = "<group>"; };
 		5B79053331AC93B2CACC53A23EA75C37 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		5D91129454450FA67CF92BDE19E853F4 /* UIButton+ppEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ppEx.m"; sourceTree = "<group>"; };
 		5E9E3A8AA4ADF394E3F4D071D2CF7D75 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		5EBA0A120726F3594E9D72BA00D0EBAA /* PPToolKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PPToolKit.m; path = PPToolKit/Classes/PPToolKit.m; sourceTree = "<group>"; };
 		5F3A7F45FA9738083FDA199C0FBA289D /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		5F71ABA8402AFF007B0C8E86CA24687D /* PPCatalystTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = PPCatalystTool.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5F87E884C91E6A581B6BF108C651BA7C /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		61B8EC8ACC19ED11C79C8848CE7C8473 /* NSObject+ppEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+ppEx.h"; sourceTree = "<group>"; };
 		66011B12DAD1F37340CB7872380B8BF5 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
 		66ED0AF9662F3863877CA2CAA8FE2B1C /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		6870DCB17006037B63497820E5FAE48A /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
+		69991C7A36A1F2DD11B81DE391208B21 /* PPAlertBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PPAlertBaseView.h; sourceTree = "<group>"; };
 		6B915CCAD4F14AFADEA565EC76F67F88 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
-		6BCE79475A45328055DDCADB9E807EDC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		6CB9826A5DD9A3C4C2F8F7EBD1945381 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
-		6EE1351F186F14C85D1DFD3F00C6873A /* NSArray+ppEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+ppEx.h"; sourceTree = "<group>"; };
-		70F600CAA276284EECBE8088EF27FCC9 /* PPCatalystPlugin.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = PPCatalystPlugin.bundle; path = PPCatalystPlugin/Products/PPCatalystPlugin.bundle; sourceTree = "<group>"; };
-		722289C6EB3B6BCB6CF9CD4502599B87 /* PPToolKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PPToolKit-Info.plist"; sourceTree = "<group>"; };
+		6F36827340D78F5F5D7E701561C6769E /* NSString+ppEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+ppEx.m"; sourceTree = "<group>"; };
+		728ACDEFD81898902210A3EBCBAF4547 /* PPToolKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = PPToolKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		72FCF014D2C374406B985755FE2BAD5D /* PPCatalystTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PPCatalystTool.release.xcconfig; sourceTree = "<group>"; };
 		735FB9876555F60547F979E287E59A51 /* Pods-PPSpecPublisher-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PPSpecPublisher-frameworks.sh"; sourceTree = "<group>"; };
 		785148E521E58D0C9499ED642CDE6DA6 /* Pods-CommandHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CommandHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		78758429B115399A8E5AB8B9BC96AFF2 /* UIView+ppEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+ppEx.m"; sourceTree = "<group>"; };
 		78EB5A13A021E9717F0A603E60B9591C /* Pods-CommandHelper-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CommandHelper-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7A5BDCCEF3F210F57424F1094F74BCB8 /* PPCatalystTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPCatalystTool.h; path = PPCatalystTool/PPCatalystTool/PPCatalystTool.h; sourceTree = "<group>"; };
 		7BE9551A9F9AF20CFB50E614B73A6458 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
 		7E0DF9C77119964F44FDCFE9CF2D37F0 /* Pods-PPSpecPublisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PPSpecPublisher-umbrella.h"; sourceTree = "<group>"; };
 		7F8A60CE298636457C15260C815A7924 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		80A464475ABBCE037F4D55C103DF1F41 /* PPCatalystTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PPCatalystTool.modulemap; sourceTree = "<group>"; };
+		819B70C161EC4F67CDD7FE248839FACC /* PPAlertBaseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PPAlertBaseView.m; sourceTree = "<group>"; };
 		81E5C83366512417905F0FDF29433450 /* CocoaAsyncSocket-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CocoaAsyncSocket-library-prefix.pch"; path = "../CocoaAsyncSocket-library/CocoaAsyncSocket-library-prefix.pch"; sourceTree = "<group>"; };
 		831D0EE1ABF878AD0F127E6EAE26DB02 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
+		8351159C7F32F61967657844FCAD257C /* NSDictionary+ppEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ppEx.h"; sourceTree = "<group>"; };
+		83E411F41A248571EF6E63418A4C656A /* PPCatalystTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PPCatalystTool-dummy.m"; sourceTree = "<group>"; };
 		859B5364A58DEFF3157F24BD1A074E4C /* CocoaAsyncSocket-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CocoaAsyncSocket-framework.release.xcconfig"; sourceTree = "<group>"; };
-		8636A0CF03CB69B5FAC7C28CD5AB3230 /* PPCatalystTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PPCatalystTool-prefix.pch"; sourceTree = "<group>"; };
-		864EA7091C823F0E2767C29B98DC77B1 /* UIView+ppEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+ppEx.m"; sourceTree = "<group>"; };
+		8C8A5F7F5499DBFE6E82013E9513956D /* PPToolKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PPToolKit.release.xcconfig; sourceTree = "<group>"; };
+		8E9C617367FED9292F1B369A7E8B2958 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8FFC4F547786286F5F9E3125B55D8016 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		922574FE159482C566193733444E624E /* Pods-PPSpecPublisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PPSpecPublisher.modulemap"; sourceTree = "<group>"; };
-		95EE56785AF24183ADBD972DEB4D8DF3 /* Pods-CommandHelper */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-CommandHelper"; path = "libPods-CommandHelper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		98EA91CD6C59F8E8B731DDA96456802A /* UILabel+ppEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ppEx.m"; sourceTree = "<group>"; };
+		95EE56785AF24183ADBD972DEB4D8DF3 /* libPods-CommandHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CommandHelper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A678172D94F5EF40676B07A6E862D5 /* PPToolKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PPToolKit-dummy.m"; sourceTree = "<group>"; };
+		975E73966809B16B5357342A76E2BC9A /* UIView+Drop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Drop.h"; path = "PPCatalystTool/PPCatalystTool/UIView+Drop.h"; sourceTree = "<group>"; };
+		99452AB83E5EC6CBA3097F12AF91A2CF /* PPCatalystTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PPCatalystTool-Info.plist"; sourceTree = "<group>"; };
 		9A0E3FE6A59FC8EA69FADC8FB5555D93 /* Pods-PPSpecPublisher-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PPSpecPublisher-acknowledgements.plist"; sourceTree = "<group>"; };
 		9A4C092B123255DC20541D566803164E /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1BFF38DF36CA33D686C3F09F2A34D6E /* UIButton+ppEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ppEx.m"; sourceTree = "<group>"; };
-		AE1FEE52A8143DCEB07478B3F57A0993 /* PPScrollContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PPScrollContentView.m; path = PPToolKit/Classes/PPScrollContentView.m; sourceTree = "<group>"; };
-		AE8B77831E60E18B4BF472CF026DF5C5 /* NSObject+ppEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+ppEx.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A26CC0E57961AC8A0D674D7D8D8DEE3D /* UIImage+ppEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ppEx.m"; sourceTree = "<group>"; };
+		A28D9F0D2121E7BD4F9631AA31BDFC9C /* UIView+Drop.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = "UIView+Drop.md"; path = "PPCatalystTool/PPCatalystTool/UIView+Drop.md"; sourceTree = "<group>"; };
+		A594B939FF38B962A8F653E1B6EE55EF /* UIView+ppEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+ppEx.h"; sourceTree = "<group>"; };
+		A7DFA09EAE47040A575B8AA8F18B1D52 /* PPToolKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PPToolKit-umbrella.h"; sourceTree = "<group>"; };
+		B07D1C60E64ACAD813F18F5CFC1E21FC /* NSFileManager+ppEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+ppEx.m"; sourceTree = "<group>"; };
 		B28D58C5B487CAE945407564E5581BCF /* Pods-CommandHelper-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CommandHelper-acknowledgements.plist"; sourceTree = "<group>"; };
+		B2B24B3B0A4CFDC8C738BF2216A169FE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B2D7B3B6F730D7893DD4C5F3DFD91DA3 /* UILabel+ppEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UILabel+ppEx.h"; sourceTree = "<group>"; };
+		B30944438669E0DAF856C359BAB85755 /* NSString+ppEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+ppEx.h"; sourceTree = "<group>"; };
 		B3B96156F2263D5EF7A6EA6D50B3A8BD /* CocoaAsyncSocket-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-framework-dummy.m"; sourceTree = "<group>"; };
 		B3F9137AD2839546ACA6ADA9F0B1A20C /* CocoaAsyncSocket-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "CocoaAsyncSocket-library.release.xcconfig"; path = "../CocoaAsyncSocket-library/CocoaAsyncSocket-library.release.xcconfig"; sourceTree = "<group>"; };
+		B543BD341E74D60FDB8222A7EF6DBDFE /* UIImage+ppEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+ppEx.h"; sourceTree = "<group>"; };
 		B6A96D26001DCEFE53F330C9041B562C /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		B7A5B25D0CEAE0C65B2D4DBE5B1D8FAF /* PPToolKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPToolKit.h; path = PPToolKit/Classes/PPToolKit.h; sourceTree = "<group>"; };
+		B8CA895A432A80AF08A0AD0A69652D02 /* Config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Config.h; path = PPToolKit/Classes/Config.h; sourceTree = "<group>"; };
 		BD0EEA67A705257FE7ED3771B6D31C44 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
-		BDC43D32AACAC0354200D783494EC9A4 /* PPScrollContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPScrollContentView.h; path = PPToolKit/Classes/PPScrollContentView.h; sourceTree = "<group>"; };
 		BE4C0BF2BAB40138B94E4EED0ADF1414 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		C26495CDFAE07205BF71494B11B5FAA7 /* PPCatalystTool.docc */ = {isa = PBXFileReference; includeInIndex = 1; name = PPCatalystTool.docc; path = PPCatalystTool/PPCatalystTool/PPCatalystTool.docc; sourceTree = "<group>"; };
 		C279CFE4E16F1F5C4CB7851172E1583F /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		C862BDB800B351039504E6BCE0C4D1F1 /* CocoaAsyncSocket-library */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "CocoaAsyncSocket-library"; path = "libCocoaAsyncSocket-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB01421EC73780F0CACC79B4D4785D2A /* PPToolKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PPToolKit-dummy.m"; sourceTree = "<group>"; };
-		CB8D42A35043500D3F828F83540292B3 /* PPToolKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPToolKit.h; path = PPToolKit/Classes/PPToolKit.h; sourceTree = "<group>"; };
+		C508C0076F92D0DBAC6639A457287DFB /* UILabel+ppEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ppEx.m"; sourceTree = "<group>"; };
+		C862BDB800B351039504E6BCE0C4D1F1 /* libCocoaAsyncSocket-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCocoaAsyncSocket-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2BCE594EF9D75C930D8431D260054C /* Pods-PPSpecPublisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PPSpecPublisher-dummy.m"; sourceTree = "<group>"; };
-		D38000E5BF9AF652DA7E51B3282F15FC /* PPToolKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PPToolKit.release.xcconfig; sourceTree = "<group>"; };
-		D531E3CBB45907F42483BB8DDEB3948A /* PPCatalystTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PPCatalystTool-umbrella.h"; sourceTree = "<group>"; };
 		D8556B5899BCC8EB133C7069CEBB2E9A /* CocoaAsyncSocket-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "CocoaAsyncSocket-framework.modulemap"; sourceTree = "<group>"; };
+		D8B99A0160B34ABD0A8F8232D748AF7C /* NSArray+ppEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+ppEx.h"; sourceTree = "<group>"; };
 		D8BA523417D93C3EE4002BCEA614941C /* Pods-PPSpecPublisher-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PPSpecPublisher-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DAEA7DB33CA53FA3FD46A06E7035274E /* PPCatalystTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PPCatalystTool.debug.xcconfig; sourceTree = "<group>"; };
-		DB46C44A447A9655A2D65DB2F4F13FA8 /* NSDictionary+ppEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ppEx.h"; sourceTree = "<group>"; };
-		DB88BF4847B622C03D16FF2D89D81744 /* PPCatalystTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PPCatalystTool.release.xcconfig; sourceTree = "<group>"; };
+		D9CDF652EDE591B0D74D6FAF5EC6D065 /* PPCatalystPlugin.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = PPCatalystPlugin.bundle; path = PPCatalystPlugin/Products/PPCatalystPlugin.bundle; sourceTree = "<group>"; };
+		DA1FA699218EDFCBDFF2BC1779E3CC85 /* PPCatalystHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PPCatalystHandle.m; path = PPCatalystTool/PPCatalystTool/PPCatalystHandle.m; sourceTree = "<group>"; };
+		DA75437C1095DD9CF81B7766A1AE425E /* PPScrollContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPScrollContentView.h; path = PPToolKit/Classes/PPScrollContentView.h; sourceTree = "<group>"; };
+		E1876604C1B1DF6D1958A625B4B82871 /* PPCatalystTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PPCatalystTool.debug.xcconfig; sourceTree = "<group>"; };
 		E266BEFD6C4AA91169B5BAA78C62CA55 /* Pods-PPSpecPublisher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PPSpecPublisher.release.xcconfig"; sourceTree = "<group>"; };
 		E4BB1C09120A60A1A9A4AB69E90E6116 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
-		E64DE9E127055BDF9453232542926D96 /* PPCatalystHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPCatalystHandle.h; path = PPCatalystTool/PPCatalystTool/PPCatalystHandle.h; sourceTree = "<group>"; };
-		E6767752DE8F62911F8A56A5A0AA44BA /* UIImage+ppEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ppEx.m"; sourceTree = "<group>"; };
 		E78D4AD71C8986F338666BBA39164A33 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
-		EA59B1E7185592BABE8AD832C012EE03 /* Pods-PPSpecPublisher */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PPSpecPublisher"; path = Pods_PPSpecPublisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDAD3E26A034203607F38F734BC76E71 /* PPToolKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PPToolKit.modulemap; sourceTree = "<group>"; };
-		EFB9CDBA06A0C00688BC98FA4474DAAE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		F1876999D13F6A566EA0A0B32BD24194 /* PPToolKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PPToolKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E8E6F05480F0ECCFA6828AC37033CC83 /* PPToolKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PPToolKit-prefix.pch"; sourceTree = "<group>"; };
+		EA59B1E7185592BABE8AD832C012EE03 /* Pods_PPSpecPublisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PPSpecPublisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F02D83C0423FFDF4564FB3FF987B1B48 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = PPToolKit/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		F21C18CC963CA5C6F356785488C116B0 /* Pods-CommandHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CommandHelper.release.xcconfig"; sourceTree = "<group>"; };
 		F626F0D0C4E0254A1E50E37A6DC36422 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
 		F74A24514A11AB40A7F90AF1435D7861 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		F8FEC196D1CD57F89DB9F6DAFC95F9E2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F93E4DAEEABA1561FD3936EF1405F4B5 /* PPCatalystTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PPCatalystTool-umbrella.h"; sourceTree = "<group>"; };
 		F9EBEE03D7548ADE3218C1ED7F4346CB /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		FA98CEBD80DF57B6865995A52C3E1E75 /* PPScrollContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PPScrollContentView.m; path = PPToolKit/Classes/PPScrollContentView.m; sourceTree = "<group>"; };
 		FBDB4126395A133A59C5D87B0AD0A633 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
-		FC2E90E3B2D8BDDF421872CA2E590DAC /* PPCatalystTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPCatalystTool.h; path = PPCatalystTool/PPCatalystTool/PPCatalystTool.h; sourceTree = "<group>"; };
-		FF3C6024ED17E9A89A499C0B8A210A8F /* UIView+ppEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+ppEx.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +277,14 @@
 			files = (
 				D663837F4347AF58660EE6F7FD426ECE /* Foundation.framework in Frameworks */,
 				4571A0EA37DC84F39E3830D38A1531AB /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17B4C0C822AC48D4504D3DE1655B7AE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0366299D924B058B432CDFB00F209EF6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,14 +328,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD1AF94563DEB11F534E4708EA12F032 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7246B57AE951153EBA8E30BDDB2231E1 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -332,6 +338,30 @@
 				B59025D512AEC756028304D7AE7BDE17 /* Masonry */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		1E770FE0DFE289421E1CD26BBDD4E332 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				32F4A8D398FCF3390705A8896F17346F /* AlertView */,
+			);
+			name = Common;
+			path = PPToolKit/Classes/Common;
+			sourceTree = "<group>";
+		};
+		25FD8B89001AFB60805E8843C0DE6225 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B8CA895A432A80AF08A0AD0A69652D02 /* Config.h */,
+				DA75437C1095DD9CF81B7766A1AE425E /* PPScrollContentView.h */,
+				FA98CEBD80DF57B6865995A52C3E1E75 /* PPScrollContentView.m */,
+				B7A5B25D0CEAE0C65B2D4DBE5B1D8FAF /* PPToolKit.h */,
+				5EBA0A120726F3594E9D72BA00D0EBAA /* PPToolKit.m */,
+				F02D83C0423FFDF4564FB3FF987B1B48 /* ReplaceMe.m */,
+				30D9AD3F13EF8FDEC6AB56DBA3477D90 /* Category */,
+				1E770FE0DFE289421E1CD26BBDD4E332 /* Common */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		2AFF9B156469E61D58517DD0FABAA35D /* Pods-CommandHelper */ = {
@@ -347,33 +377,53 @@
 			path = "Target Support Files/Pods-CommandHelper";
 			sourceTree = "<group>";
 		};
+		30D9AD3F13EF8FDEC6AB56DBA3477D90 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D8B99A0160B34ABD0A8F8232D748AF7C /* NSArray+ppEx.h */,
+				25E4C7A4E55011F8F5B87173990AF333 /* NSArray+ppEx.m */,
+				8351159C7F32F61967657844FCAD257C /* NSDictionary+ppEx.h */,
+				4C65EDFFA9F5D63C6C725786605EA6AD /* NSDictionary+ppEx.m */,
+				495024B3DFF6C20BCC986B2AAACF3C5D /* NSFileManager+ppEx.h */,
+				B07D1C60E64ACAD813F18F5CFC1E21FC /* NSFileManager+ppEx.m */,
+				61B8EC8ACC19ED11C79C8848CE7C8473 /* NSObject+ppEx.h */,
+				06879D5DA006DAA79966CB5A31F21F43 /* NSObject+ppEx.m */,
+				B30944438669E0DAF856C359BAB85755 /* NSString+ppEx.h */,
+				6F36827340D78F5F5D7E701561C6769E /* NSString+ppEx.m */,
+				202A5223826225FB3A7AFC4F05038ACA /* UIButton+ppEx.h */,
+				5D91129454450FA67CF92BDE19E853F4 /* UIButton+ppEx.m */,
+				B543BD341E74D60FDB8222A7EF6DBDFE /* UIImage+ppEx.h */,
+				A26CC0E57961AC8A0D674D7D8D8DEE3D /* UIImage+ppEx.m */,
+				B2D7B3B6F730D7893DD4C5F3DFD91DA3 /* UILabel+ppEx.h */,
+				C508C0076F92D0DBAC6639A457287DFB /* UILabel+ppEx.m */,
+				A594B939FF38B962A8F653E1B6EE55EF /* UIView+ppEx.h */,
+				78758429B115399A8E5AB8B9BC96AFF2 /* UIView+ppEx.m */,
+			);
+			name = Category;
+			path = PPToolKit/Classes/Category;
+			sourceTree = "<group>";
+		};
+		32F4A8D398FCF3390705A8896F17346F /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				69991C7A36A1F2DD11B81DE391208B21 /* PPAlertBaseView.h */,
+				819B70C161EC4F67CDD7FE248839FACC /* PPAlertBaseView.m */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
 		36905901812BDB1F447C90FE8DF3D316 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				528BB0C50E6399174879BFFDF58163A9 /* CocoaAsyncSocket-framework */,
-				C862BDB800B351039504E6BCE0C4D1F1 /* CocoaAsyncSocket-library */,
-				1FFED36A657123030ABB700256D73F15 /* Masonry */,
-				95EE56785AF24183ADBD972DEB4D8DF3 /* Pods-CommandHelper */,
-				EA59B1E7185592BABE8AD832C012EE03 /* Pods-PPSpecPublisher */,
-				47AA0837805F9715435A63322F682A06 /* PPCatalystTool */,
-				1923E8A4F41E6B725FFFA16E63D83AEF /* PPToolKit */,
+				528BB0C50E6399174879BFFDF58163A9 /* CocoaAsyncSocket.framework */,
+				C862BDB800B351039504E6BCE0C4D1F1 /* libCocoaAsyncSocket-library.a */,
+				1FFED36A657123030ABB700256D73F15 /* Masonry.framework */,
+				95EE56785AF24183ADBD972DEB4D8DF3 /* libPods-CommandHelper.a */,
+				EA59B1E7185592BABE8AD832C012EE03 /* Pods_PPSpecPublisher.framework */,
+				47AA0837805F9715435A63322F682A06 /* PPCatalystTool.framework */,
+				1923E8A4F41E6B725FFFA16E63D83AEF /* PPToolKit.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		3DF4B47F1457530BE276978C7E4AB30B /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				108806F738650AFDCFF620E60B84D0B4 /* Config.h */,
-				BDC43D32AACAC0354200D783494EC9A4 /* PPScrollContentView.h */,
-				AE1FEE52A8143DCEB07478B3F57A0993 /* PPScrollContentView.m */,
-				CB8D42A35043500D3F828F83540292B3 /* PPToolKit.h */,
-				1C089D3134E1C363474E7220D86DCD54 /* PPToolKit.m */,
-				54FAC8A2CA133D58ECCE1DAFCA6B012C /* ReplaceMe.m */,
-				7222D5A417634D93AFD5FCB09036A5C2 /* Category */,
-				7C644AD77E1E1054003BE27F4BD08FE3 /* Common */,
-			);
-			name = Core;
 			sourceTree = "<group>";
 		};
 		3E460617B510F4C12B5658E53DDD5433 /* iOS */ = {
@@ -387,92 +437,30 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		41F8FEF31EFE177B318AF76F7FC70EFB /* Pod */ = {
+		5A54176F7602D87A1D125722FFB3E257 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EFB9CDBA06A0C00688BC98FA4474DAAE /* LICENSE */,
-				F1876999D13F6A566EA0A0B32BD24194 /* PPToolKit.podspec */,
-				6BCE79475A45328055DDCADB9E807EDC /* README.md */,
+				00F63504296C63CD741C3555EB5BCB1A /* PPToolKit.modulemap */,
+				96A678172D94F5EF40676B07A6E862D5 /* PPToolKit-dummy.m */,
+				09B5880CE0BAD2AE3AD6A2818FA811BE /* PPToolKit-Info.plist */,
+				E8E6F05480F0ECCFA6828AC37033CC83 /* PPToolKit-prefix.pch */,
+				A7DFA09EAE47040A575B8AA8F18B1D52 /* PPToolKit-umbrella.h */,
+				596C85A4A1175784F824BAAE648B73E6 /* PPToolKit.debug.xcconfig */,
+				8C8A5F7F5499DBFE6E82013E9513956D /* PPToolKit.release.xcconfig */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "../pengpengSpecsPublisher/PPSpecPublisher/Pods/Target Support Files/PPToolKit";
 			sourceTree = "<group>";
 		};
-		6193BB3C17F6F6FFCD4F5EF79FD82036 /* Pod */ = {
+		6072A4AB725BC598A2173C4622A9E3E1 /* PPToolKit */ = {
 			isa = PBXGroup;
 			children = (
-				039EBB1ABA581D4E6A410A5F4BAE39D6 /* PPCatalystTool.podspec */,
-				F8FEC196D1CD57F89DB9F6DAFC95F9E2 /* README.md */,
+				25FD8B89001AFB60805E8843C0DE6225 /* Core */,
+				8927F05DF75F0F3748D9D1361404A775 /* Pod */,
+				5A54176F7602D87A1D125722FFB3E257 /* Support Files */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		61F66CA05958258A408C4D5C67C333D4 /* AlertView */ = {
-			isa = PBXGroup;
-			children = (
-				229E78E223DB1EF34D2D45E7148CAA3A /* PPAlertBaseView.h */,
-				314138F5EA823AFE35342B9534E0DD81 /* PPAlertBaseView.m */,
-			);
-			name = AlertView;
-			path = AlertView;
-			sourceTree = "<group>";
-		};
-		7222D5A417634D93AFD5FCB09036A5C2 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				6EE1351F186F14C85D1DFD3F00C6873A /* NSArray+ppEx.h */,
-				3279941FC1CF1A99C2DFFB8A9AE41B91 /* NSArray+ppEx.m */,
-				DB46C44A447A9655A2D65DB2F4F13FA8 /* NSDictionary+ppEx.h */,
-				26E1A7D068BBAACB7A427BBE4CFDCF94 /* NSDictionary+ppEx.m */,
-				50B77F84E76DD7A5C6B39EC15C83AB10 /* NSFileManager+ppEx.h */,
-				1DDEB3793BF1E7D504C21E0AEA72ABA9 /* NSFileManager+ppEx.m */,
-				AE8B77831E60E18B4BF472CF026DF5C5 /* NSObject+ppEx.h */,
-				08A601869B262A03CA498019267DC012 /* NSObject+ppEx.m */,
-				188F690664C57D86A33E41522FE51384 /* NSString+ppEx.h */,
-				14AEF6DCE6815EB7C5C19D23677780B7 /* NSString+ppEx.m */,
-				3BD487EEE453D9BACE4EEEE012C40AE2 /* UIButton+ppEx.h */,
-				A1BFF38DF36CA33D686C3F09F2A34D6E /* UIButton+ppEx.m */,
-				1A17B86B101618ED9CE484E034052C0C /* UIImage+ppEx.h */,
-				E6767752DE8F62911F8A56A5A0AA44BA /* UIImage+ppEx.m */,
-				0804E63CF57124EB81CA034D7ABDA0CC /* UILabel+ppEx.h */,
-				98EA91CD6C59F8E8B731DDA96456802A /* UILabel+ppEx.m */,
-				FF3C6024ED17E9A89A499C0B8A210A8F /* UIView+ppEx.h */,
-				864EA7091C823F0E2767C29B98DC77B1 /* UIView+ppEx.m */,
-			);
-			name = Category;
-			path = PPToolKit/Classes/Category;
-			sourceTree = "<group>";
-		};
-		7C644AD77E1E1054003BE27F4BD08FE3 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				61F66CA05958258A408C4D5C67C333D4 /* AlertView */,
-			);
-			name = Common;
-			path = PPToolKit/Classes/Common;
-			sourceTree = "<group>";
-		};
-		7DCB067F0F761C556D312079B73B050B /* PPCatalystTool */ = {
-			isa = PBXGroup;
-			children = (
-				E64DE9E127055BDF9453232542926D96 /* PPCatalystHandle.h */,
-				5B78A9CD481EFECE5F7E9E36EFDA00B5 /* PPCatalystHandle.m */,
-				70F600CAA276284EECBE8088EF27FCC9 /* PPCatalystPlugin.bundle */,
-				C26495CDFAE07205BF71494B11B5FAA7 /* PPCatalystTool.docc */,
-				FC2E90E3B2D8BDDF421872CA2E590DAC /* PPCatalystTool.h */,
-				6193BB3C17F6F6FFCD4F5EF79FD82036 /* Pod */,
-				CBC5CBA7D623920BC4D4AEACB140DD48 /* Support Files */,
-			);
-			name = PPCatalystTool;
-			path = ../../../PPCatalystTool;
-			sourceTree = "<group>";
-		};
-		80D9DE89F41B67414983616B30419259 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7DCB067F0F761C556D312079B73B050B /* PPCatalystTool */,
-				95C861883C67F331E53FD83471A727EB /* PPToolKit */,
-			);
-			name = "Development Pods";
+			name = PPToolKit;
+			path = ../../../PPToolKit;
 			sourceTree = "<group>";
 		};
 		84514F83828DF14E30949FE505A3FD9F /* Support Files */ = {
@@ -490,15 +478,56 @@
 			path = "../Target Support Files/Masonry";
 			sourceTree = "<group>";
 		};
-		95C861883C67F331E53FD83471A727EB /* PPToolKit */ = {
+		84919A336EC92E7FC273F70364C1A717 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3DF4B47F1457530BE276978C7E4AB30B /* Core */,
-				41F8FEF31EFE177B318AF76F7FC70EFB /* Pod */,
-				C3567732E36077B3B73EA4A6E880D424 /* Support Files */,
+				2F9601921CF940C5A41CA8A823855534 /* PPCatalystTool.modulemap */,
+				83E411F41A248571EF6E63418A4C656A /* PPCatalystTool-dummy.m */,
+				99452AB83E5EC6CBA3097F12AF91A2CF /* PPCatalystTool-Info.plist */,
+				3699C2373FBAB4281906DC54774AD3AD /* PPCatalystTool-prefix.pch */,
+				F93E4DAEEABA1561FD3936EF1405F4B5 /* PPCatalystTool-umbrella.h */,
+				E1876604C1B1DF6D1958A625B4B82871 /* PPCatalystTool.debug.xcconfig */,
+				72FCF014D2C374406B985755FE2BAD5D /* PPCatalystTool.release.xcconfig */,
 			);
-			name = PPToolKit;
-			path = ../../../PPToolKit;
+			name = "Support Files";
+			path = "../pengpengSpecsPublisher/PPSpecPublisher/Pods/Target Support Files/PPCatalystTool";
+			sourceTree = "<group>";
+		};
+		8927F05DF75F0F3748D9D1361404A775 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B2B24B3B0A4CFDC8C738BF2216A169FE /* LICENSE */,
+				728ACDEFD81898902210A3EBCBAF4547 /* PPToolKit.podspec */,
+				504695C997D9A2B3BC9C18A78ED05F2B /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		A3DE0E5566FEADC43299FD7004190B4C /* PPCatalystTool */ = {
+			isa = PBXGroup;
+			children = (
+				24B4D5EDE7DB0CB4A208AA795A864B00 /* PPCatalystHandle.h */,
+				DA1FA699218EDFCBDFF2BC1779E3CC85 /* PPCatalystHandle.m */,
+				D9CDF652EDE591B0D74D6FAF5EC6D065 /* PPCatalystPlugin.bundle */,
+				2CDEF298C3BB898958EAA7A6E9FFF4D9 /* PPCatalystTool.docc */,
+				7A5BDCCEF3F210F57424F1094F74BCB8 /* PPCatalystTool.h */,
+				975E73966809B16B5357342A76E2BC9A /* UIView+Drop.h */,
+				1A8B85271421C4F6DE541E473E84A0DD /* UIView+Drop.m */,
+				A28D9F0D2121E7BD4F9631AA31BDFC9C /* UIView+Drop.md */,
+				DA240CC91D772760BFD895FC238692FF /* Pod */,
+				84919A336EC92E7FC273F70364C1A717 /* Support Files */,
+			);
+			name = PPCatalystTool;
+			path = ../../../PPCatalystTool;
+			sourceTree = "<group>";
+		};
+		A5EC52870DD43E174BE83ACE9E84D659 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3DE0E5566FEADC43299FD7004190B4C /* PPCatalystTool */,
+				6072A4AB725BC598A2173C4622A9E3E1 /* PPToolKit */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		AE7B0EA47C57A9C8DDA077E34B2A354C /* CocoaAsyncSocket */ = {
@@ -510,7 +539,6 @@
 				6CB9826A5DD9A3C4C2F8F7EBD1945381 /* GCDAsyncUdpSocket.m */,
 				DE51F2439303C3444AC00E19A7DA3666 /* Support Files */,
 			);
-			name = CocoaAsyncSocket;
 			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
 		};
@@ -544,7 +572,6 @@
 				C279CFE4E16F1F5C4CB7851172E1583F /* ViewController+MASAdditions.m */,
 				84514F83828DF14E30949FE505A3FD9F /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -565,46 +592,25 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C3567732E36077B3B73EA4A6E880D424 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EDAD3E26A034203607F38F734BC76E71 /* PPToolKit.modulemap */,
-				CB01421EC73780F0CACC79B4D4785D2A /* PPToolKit-dummy.m */,
-				722289C6EB3B6BCB6CF9CD4502599B87 /* PPToolKit-Info.plist */,
-				20EEC187E090EC1EBCE6E2A000D3CCBB /* PPToolKit-prefix.pch */,
-				1AC3464D30F015BD5D23332FE33B68FA /* PPToolKit-umbrella.h */,
-				0B906694C902F6977538A2BA1398E827 /* PPToolKit.debug.xcconfig */,
-				D38000E5BF9AF652DA7E51B3282F15FC /* PPToolKit.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../pengpengSpecsPublisher/PPSpecPublisher/Pods/Target Support Files/PPToolKit";
-			sourceTree = "<group>";
-		};
-		CBC5CBA7D623920BC4D4AEACB140DD48 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				80A464475ABBCE037F4D55C103DF1F41 /* PPCatalystTool.modulemap */,
-				1B363AC9DA751F537DE7A911E5948712 /* PPCatalystTool-dummy.m */,
-				0E2BDE443ABAD3EFC14F6F7548AE17D4 /* PPCatalystTool-Info.plist */,
-				8636A0CF03CB69B5FAC7C28CD5AB3230 /* PPCatalystTool-prefix.pch */,
-				D531E3CBB45907F42483BB8DDEB3948A /* PPCatalystTool-umbrella.h */,
-				DAEA7DB33CA53FA3FD46A06E7035274E /* PPCatalystTool.debug.xcconfig */,
-				DB88BF4847B622C03D16FF2D89D81744 /* PPCatalystTool.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../pengpengSpecsPublisher/PPSpecPublisher/Pods/Target Support Files/PPCatalystTool";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				80D9DE89F41B67414983616B30419259 /* Development Pods */,
+				A5EC52870DD43E174BE83ACE9E84D659 /* Development Pods */,
 				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
 				16F259FB5918087A7E4E369ECD828795 /* Pods */,
 				36905901812BDB1F447C90FE8DF3D316 /* Products */,
 				BC9B1F81D6A3A9A4AFAD1C17FD3C8417 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		DA240CC91D772760BFD895FC238692FF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				5F71ABA8402AFF007B0C8E86CA24687D /* PPCatalystTool.podspec */,
+				8E9C617367FED9292F1B369A7E8B2958 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		DE51F2439303C3444AC00E19A7DA3666 /* Support Files */ = {
@@ -700,6 +706,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8972E8A5AAA768D50B78840EBCB36EB0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D102099991B7029029FF8990E43F5111 /* PPCatalystHandle.h in Headers */,
+				C845B544515D1C9BEE37D6F6191555FE /* PPCatalystTool.h in Headers */,
+				FB56D446DACE9CD4E1A31E480538D2ED /* PPCatalystTool-umbrella.h in Headers */,
+				E9F9A28B4AC812A9923B36234B8062A1 /* UIView+Drop.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8ED3F6304E1FC08CB86182D12558236 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -724,16 +741,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CCC734698D0AA3AFCCDD266DC96D1461 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C0D68B275C366F79C9C9F5A3AE7502D2 /* PPCatalystHandle.h in Headers */,
-				85D045D60811EAF9E2CA345070D82960 /* PPCatalystTool.h in Headers */,
-				A00009E35105D225E959F2BCA0BEB5B9 /* PPCatalystTool-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -752,7 +759,7 @@
 			);
 			name = "CocoaAsyncSocket-framework";
 			productName = CocoaAsyncSocket;
-			productReference = 528BB0C50E6399174879BFFDF58163A9 /* CocoaAsyncSocket-framework */;
+			productReference = 528BB0C50E6399174879BFFDF58163A9 /* CocoaAsyncSocket.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
@@ -770,7 +777,7 @@
 			);
 			name = Masonry;
 			productName = Masonry;
-			productReference = 1FFED36A657123030ABB700256D73F15 /* Masonry */;
+			productReference = 1FFED36A657123030ABB700256D73F15 /* Masonry.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8A548C3E150FA9B7FA852F7714AC8CBB /* PPToolKit */ = {
@@ -785,11 +792,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				9EB1142BD8A9D65CCD1CCD7567C80513 /* PBXTargetDependency */,
+				9F5204AC9D78057D7401842539ED8026 /* PBXTargetDependency */,
 			);
 			name = PPToolKit;
 			productName = PPToolKit;
-			productReference = 1923E8A4F41E6B725FFFA16E63D83AEF /* PPToolKit */;
+			productReference = 1923E8A4F41E6B725FFFA16E63D83AEF /* PPToolKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B4E6FF793C250EB93FC362B87044AA47 /* Pods-CommandHelper */ = {
@@ -803,11 +810,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				3E2102EAA86C98FDFEBBD657F678F018 /* PBXTargetDependency */,
+				42D34D04D4F359BB6CA95348F9519CB5 /* PBXTargetDependency */,
 			);
 			name = "Pods-CommandHelper";
 			productName = "Pods-CommandHelper";
-			productReference = 95EE56785AF24183ADBD972DEB4D8DF3 /* Pods-CommandHelper */;
+			productReference = 95EE56785AF24183ADBD972DEB4D8DF3 /* libPods-CommandHelper.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		E31DAE18C5A491C221932EE5AE80286C /* Pods-PPSpecPublisher */ = {
@@ -822,14 +829,14 @@
 			buildRules = (
 			);
 			dependencies = (
-				75B24CA72F0BA1BB4CB9F3290F7A3D8F /* PBXTargetDependency */,
-				DE061E5D7DA7A16EB0F7C0652C10E091 /* PBXTargetDependency */,
-				B974BC52AD3A5621A0622920E85C56A7 /* PBXTargetDependency */,
-				C5CB68B9127A629B13FE84010A162ADC /* PBXTargetDependency */,
+				38C5AA42DCDDD0F571009B474E744F36 /* PBXTargetDependency */,
+				6CCB5EEA211942F53C7C5B94499A559A /* PBXTargetDependency */,
+				7D1A3DA45CF2528FBB67B535024B2174 /* PBXTargetDependency */,
+				933CA0A540CAD1AEE3D1890C31772739 /* PBXTargetDependency */,
 			);
 			name = "Pods-PPSpecPublisher";
 			productName = Pods_PPSpecPublisher;
-			productReference = EA59B1E7185592BABE8AD832C012EE03 /* Pods-PPSpecPublisher */;
+			productReference = EA59B1E7185592BABE8AD832C012EE03 /* Pods_PPSpecPublisher.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F3224BC9E53D936CE2343B07DB3E7B38 /* CocoaAsyncSocket-library */ = {
@@ -846,17 +853,17 @@
 			);
 			name = "CocoaAsyncSocket-library";
 			productName = "CocoaAsyncSocket-library";
-			productReference = C862BDB800B351039504E6BCE0C4D1F1 /* CocoaAsyncSocket-library */;
+			productReference = C862BDB800B351039504E6BCE0C4D1F1 /* libCocoaAsyncSocket-library.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		F343808A707AB3BDFB01DD96DBEA683C /* PPCatalystTool */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F303EEC8C7D5170DE4D462EECEA1236 /* Build configuration list for PBXNativeTarget "PPCatalystTool" */;
+			buildConfigurationList = D9B039903485BFD69219FBC1A0C2337F /* Build configuration list for PBXNativeTarget "PPCatalystTool" */;
 			buildPhases = (
-				CCC734698D0AA3AFCCDD266DC96D1461 /* Headers */,
-				55552BDB11059930CA61D7A766A79CC5 /* Sources */,
-				FD1AF94563DEB11F534E4708EA12F032 /* Frameworks */,
-				994EB58A56F67961847D02042CCD1F1D /* Resources */,
+				8972E8A5AAA768D50B78840EBCB36EB0 /* Headers */,
+				9D9D01B362C4CC9396A8A3EAF04A2091 /* Sources */,
+				17B4C0C822AC48D4504D3DE1655B7AE7 /* Frameworks */,
+				77695602FD9F9C660E665775DBF1FF4E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -864,7 +871,7 @@
 			);
 			name = PPCatalystTool;
 			productName = PPCatalystTool;
-			productReference = 47AA0837805F9715435A63322F682A06 /* PPCatalystTool */;
+			productReference = 47AA0837805F9715435A63322F682A06 /* PPCatalystTool.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -885,8 +892,6 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			minimizedProjectReferenceProxies = 0;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 36905901812BDB1F447C90FE8DF3D316 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -910,18 +915,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77695602FD9F9C660E665775DBF1FF4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				975DBE0B5F537469F2A77BB8E626F4A7 /* PPCatalystPlugin.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C870E875DF773F7F0AC343AF0836830 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		994EB58A56F67961847D02042CCD1F1D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78E91C8EF9D46EFDC9857EA26E96E32C /* PPCatalystPlugin.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -979,16 +984,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55552BDB11059930CA61D7A766A79CC5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				853D7EE00F684AAFEBF2E2D640EE0C99 /* PPCatalystHandle.m in Sources */,
-				D2A86711648BE6BB6D07793FB08A0625 /* PPCatalystTool.docc in Sources */,
-				D6ECA5601E020C0D708BAF4E84B36F14 /* PPCatalystTool-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5BBFF291F54603AFFFE82AAD78E3F104 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -996,6 +991,18 @@
 				DC7629E08A7D995640EB1866C1921365 /* CocoaAsyncSocket-library-dummy.m in Sources */,
 				CF1BB4F3AE36B73E0027E02DDBACD1CC /* GCDAsyncSocket.m in Sources */,
 				F5EFA893E9DE168A3254D09F139DEA34 /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D9D01B362C4CC9396A8A3EAF04A2091 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A24D7E30FB94294E4D5B5C68237E1E38 /* PPCatalystHandle.m in Sources */,
+				69246EE2CB634D9CD919EE45349A6956 /* PPCatalystTool.docc in Sources */,
+				C1294243EBE1324FDDB221EE20A77084 /* PPCatalystTool-dummy.m in Sources */,
+				8B063C6ECA29E7704F7DB64C29F47A37 /* UIView+Drop.m in Sources */,
+				AEA1FE41B3448810F73D027EAEEBC031 /* UIView+Drop.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1030,41 +1037,41 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3E2102EAA86C98FDFEBBD657F678F018 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "CocoaAsyncSocket-library";
-			target = F3224BC9E53D936CE2343B07DB3E7B38 /* CocoaAsyncSocket-library */;
-			targetProxy = D97E7A86CB36E2F284049DD3DD999F53 /* PBXContainerItemProxy */;
-		};
-		75B24CA72F0BA1BB4CB9F3290F7A3D8F /* PBXTargetDependency */ = {
+		38C5AA42DCDDD0F571009B474E744F36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "CocoaAsyncSocket-framework";
 			target = 06295FCEC6C19B4DD42C8CF5B234560B /* CocoaAsyncSocket-framework */;
-			targetProxy = 073E7180AFCB34837D1D93AAE0E5F01B /* PBXContainerItemProxy */;
+			targetProxy = 5EE741EA67631DC195673EC2C94D69AB /* PBXContainerItemProxy */;
 		};
-		9EB1142BD8A9D65CCD1CCD7567C80513 /* PBXTargetDependency */ = {
+		42D34D04D4F359BB6CA95348F9519CB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CocoaAsyncSocket-library";
+			target = F3224BC9E53D936CE2343B07DB3E7B38 /* CocoaAsyncSocket-library */;
+			targetProxy = 694E042B86A1474667348DCBF25E2993 /* PBXContainerItemProxy */;
+		};
+		6CCB5EEA211942F53C7C5B94499A559A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
 			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = 0EF6B3A550D2D3DBCC99C04DB1C984E9 /* PBXContainerItemProxy */;
+			targetProxy = C19645993D844BA52F9B99462C50E957 /* PBXContainerItemProxy */;
 		};
-		B974BC52AD3A5621A0622920E85C56A7 /* PBXTargetDependency */ = {
+		7D1A3DA45CF2528FBB67B535024B2174 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PPCatalystTool;
 			target = F343808A707AB3BDFB01DD96DBEA683C /* PPCatalystTool */;
-			targetProxy = 2977B3CFB5C46DC66639AA57B410342C /* PBXContainerItemProxy */;
+			targetProxy = 37F33A97385D91828F96D56650F52256 /* PBXContainerItemProxy */;
 		};
-		C5CB68B9127A629B13FE84010A162ADC /* PBXTargetDependency */ = {
+		933CA0A540CAD1AEE3D1890C31772739 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PPToolKit;
 			target = 8A548C3E150FA9B7FA852F7714AC8CBB /* PPToolKit */;
-			targetProxy = 3C522C485CF425B138DDE4AEE8056692 /* PBXContainerItemProxy */;
+			targetProxy = EBC0DFA2C4F31F8951C87E45CB132D71 /* PBXContainerItemProxy */;
 		};
-		DE061E5D7DA7A16EB0F7C0652C10E091 /* PBXTargetDependency */ = {
+		9F5204AC9D78057D7401842539ED8026 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
 			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = 566322B5B042993B7EB2C4574D5DAE56 /* PBXContainerItemProxy */;
+			targetProxy = 1B2F1009F756EC96C23FC0663F58C3F2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1110,7 +1117,7 @@
 		};
 		0E555392CB742EEFEC608151A6DF2EAE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B906694C902F6977538A2BA1398E827 /* PPToolKit.debug.xcconfig */;
+			baseConfigurationReference = 596C85A4A1175784F824BAAE648B73E6 /* PPToolKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1136,6 +1143,44 @@
 				MODULEMAP_FILE = "Target Support Files/PPToolKit/PPToolKit.modulemap";
 				PRODUCT_MODULE_NAME = PPToolKit;
 				PRODUCT_NAME = PPToolKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1FE229F1AAAB805A2ADD711405404AE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1876604C1B1DF6D1958A625B4B82871 /* PPCatalystTool.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/PPCatalystTool/PPCatalystTool-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/PPCatalystTool/PPCatalystTool-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PPCatalystTool/PPCatalystTool.modulemap";
+				PRODUCT_MODULE_NAME = PPCatalystTool;
+				PRODUCT_NAME = PPCatalystTool;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1209,44 +1254,6 @@
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 			};
 			name = Release;
-		};
-		33C0E2F72FC744D4CEE09E301894AED5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAEA7DB33CA53FA3FD46A06E7035274E /* PPCatalystTool.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/PPCatalystTool/PPCatalystTool-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/PPCatalystTool/PPCatalystTool-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/PPCatalystTool/PPCatalystTool.modulemap";
-				PRODUCT_MODULE_NAME = PPCatalystTool;
-				PRODUCT_NAME = PPCatalystTool;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		3DEC7F41FE3607DA3C4533818778BCF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1380,7 +1387,7 @@
 		};
 		5DAFD80A09F669AE2480E0492FD386E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D38000E5BF9AF652DA7E51B3282F15FC /* PPToolKit.release.xcconfig */;
+			baseConfigurationReference = 8C8A5F7F5499DBFE6E82013E9513956D /* PPToolKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1580,6 +1587,45 @@
 			};
 			name = Debug;
 		};
+		CB3CF7EA9FA0840EF82BD5799E60DF76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72FCF014D2C374406B985755FE2BAD5D /* PPCatalystTool.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/PPCatalystTool/PPCatalystTool-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/PPCatalystTool/PPCatalystTool-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PPCatalystTool/PPCatalystTool.modulemap";
+				PRODUCT_MODULE_NAME = PPCatalystTool;
+				PRODUCT_NAME = PPCatalystTool;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D0AB0AEF4014B926FCD853D3AE0A370A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C7E0228A778D8409216AF24A8C7E850 /* Masonry.release.xcconfig */;
@@ -1607,45 +1653,6 @@
 				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
 				PRODUCT_MODULE_NAME = Masonry;
 				PRODUCT_NAME = Masonry;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DEFAEBB08186CEC6FA9B6360AAA851C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB88BF4847B622C03D16FF2D89D81744 /* PPCatalystTool.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/PPCatalystTool/PPCatalystTool-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/PPCatalystTool/PPCatalystTool-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/PPCatalystTool/PPCatalystTool.modulemap";
-				PRODUCT_MODULE_NAME = PPCatalystTool;
-				PRODUCT_NAME = PPCatalystTool;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1723,15 +1730,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F303EEC8C7D5170DE4D462EECEA1236 /* Build configuration list for PBXNativeTarget "PPCatalystTool" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				33C0E2F72FC744D4CEE09E301894AED5 /* Debug */,
-				DEFAEBB08186CEC6FA9B6360AAA851C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		586E1D07ECF5FDB219BD45EF9C40A82D /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket-framework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1755,6 +1753,15 @@
 			buildConfigurations = (
 				FC9B459481686081268D3B389BC17F47 /* Debug */,
 				30797B462C9C8A15BD19F4037BDD3013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9B039903485BFD69219FBC1A0C2337F /* Build configuration list for PBXNativeTarget "PPCatalystTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FE229F1AAAB805A2ADD711405404AE5 /* Debug */,
+				CB3CF7EA9FA0840EF82BD5799E60DF76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

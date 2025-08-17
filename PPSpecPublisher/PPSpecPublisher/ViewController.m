@@ -12,6 +12,7 @@
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic, strong) UIButton *dropButton;
 @property (nonatomic, strong) UITableView *tableView;
 
 @property (nonatomic, strong) NSMutableArray <PPSpecModel *>*dataList;
@@ -26,9 +27,26 @@
 
 @property (nonatomic, strong) PPAlertBaseView *floatAlertView;
 
+@property (nonatomic, strong) NSString *specFolderPath;
+
 @end
 
 @implementation ViewController
+
+@synthesize specFolderPath = _specFolderPath;
+- (NSString *)specFolderPath {
+    if (nil == _specFolderPath) {
+        _specFolderPath = @"/Users/garenge/Downloads/Develop/SDK/pengpengSpecs";
+    }
+    return _specFolderPath;
+}
+
+- (void)setSpecFolderPath:(NSString *)specFolderPath {
+    _specFolderPath = specFolderPath;
+    NSLog(@"Setting spec path: %@", specFolderPath);
+
+    [self refreshDropButton];
+}
 
 - (NSMutableArray<PPSpecModel *> *)dataList {
     if (nil == _dataList) {
@@ -75,6 +93,8 @@
     
     [self setupSubviews];
 
+    [self refreshDropButton];
+
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self refreshData];
     });
@@ -82,7 +102,29 @@
 
 - (void)setupSubviews {
     self.view.backgroundColor = rgba(249, 249, 249, 1);
-    
+
+    UIView *bgView = [UIView pp_viewWithBackgroundColor:UIColor.whiteColor];
+    [self.view addSubview:bgView];
+    [bgView setBorderCornerRadius:8];
+    [bgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(32);
+        make.top.equalTo(self.view.mas_topMargin).offset(32);
+        make.width.mas_equalTo(250);
+        make.bottom.equalTo(self.view.mas_bottomMargin).offset(-32);
+    }];
+
+    UIButton *dropButton = [UIButton pp_buttonWithTitle:@"点击或者拖拽到此设置仓库地址" titleColor:UIColor.blueColor titleFont:[UIFont systemFontOfSize:16]];
+    [dropButton setBorderCornerRadius:8 borderColor:UIColor.lightGrayColor width:1];
+    [dropButton addTarget:self action:@selector(doClickedToSelectSpecPath:) forControlEvents:UIControlEventTouchUpInside];
+    [bgView addSubview:dropButton];
+    self.dropButton = dropButton;
+    [dropButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(8);
+        make.right.mas_equalTo(-8);
+        make.height.mas_equalTo(64);
+        make.bottom.mas_equalTo(-8);
+    }];
+
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     tableView.delegate = self;
     tableView.dataSource = self;
@@ -95,14 +137,14 @@
     } else {
         // Fallback on earlier versions
     }
-    [self.view addSubview:tableView];
+    [bgView addSubview:tableView];
     self.tableView = tableView;
     
     [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(32);
-        make.top.equalTo(self.view.mas_topMargin).offset(32);
-        make.width.mas_equalTo(250);
-        make.bottom.equalTo(self.view.mas_bottomMargin).offset(-32);
+        make.left.mas_equalTo(8);
+        make.right.mas_equalTo(-8);
+        make.top.mas_equalTo(8);
+        make.bottom.equalTo(dropButton.mas_top).offset(-32);
     }];
     
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
@@ -116,7 +158,15 @@
         make.left.equalTo(tableView.mas_right).offset(16);
         make.top.equalTo(tableView.mas_top);
         make.right.mas_equalTo(-32);
-        make.bottom.equalTo(tableView.mas_bottom);
+        make.bottom.equalTo(bgView.mas_bottom);
+    }];
+
+    __weak typeof(self) weakSelf = self;
+    [bgView enableDropWithCompletion:^(UIView * _Nonnull view,
+                                       NSArray<NSURL *> * _Nonnull fileURLs) {
+        NSLog(@"拖入文件: %@", fileURLs);
+        // 处理拖入的文件
+        [weakSelf setSpecFolderPath:fileURLs.firstObject.path];
     }];
 }
 
@@ -172,7 +222,7 @@
 }
 
 - (void)refreshData {
-    NSString *path = @"/Users/garenge/Downloads/Develop/SDK/pengpengSpecs";
+    NSString *path = self.specFolderPath;
     NSArray <NSString *>*fileList = [NSFileManager.defaultManager contentsOfDirectoryAtPath:path error:nil];
     NSArray *dataList = [fileList pp_filter:^BOOL(NSString * _Nonnull element) {
         if ([element hasPrefix:@"."]) {
@@ -231,6 +281,16 @@
     self.textView.text = [[NSString alloc] initWithContentsOfFile:specFilePath encoding:NSUTF8StringEncoding error:nil];
 }
 
+- (void)refreshDropButton {
+    if (NSStringLengthOfString(self.specFolderPath) == 0) {
+        NSLog(@"Spec path is empty, ignoring.");
+        [self.dropButton setTitle:@"点击或者拖拽到此设置仓库地址" forState:UIControlStateNormal];
+        return;
+    } else {
+        [self.dropButton setTitle:@"修改仓库地址" forState:UIControlStateNormal];
+    }
+}
+
 #pragma mark - action
 
 - (void)doClickedSelectVersionBtn:(UIButton *)sender {
@@ -263,6 +323,12 @@
     
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
     [self presentViewController:navi animated:YES completion:nil];
+}
+
+/// 选择仓库地址
+- (void)doClickedToSelectSpecPath:(UIButton *)sender {
+    NSURL *selectedURL = [PPCatalystHandle.sharedPPCatalystHandle selectFolderWithPath:@""];
+    [self setSpecFolderPath:selectedURL.path];
 }
 
 #pragma mark - tableView delegate dataSource\

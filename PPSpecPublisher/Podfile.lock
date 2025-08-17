@@ -2,10 +2,10 @@ PODS:
   - CocoaAsyncSocket (7.6.5)
   - Masonry (1.1.0)
   - PPCatalystTool (1.0.9)
-  - PPToolKit (0.1.6):
+  - PPToolKit (0.1.7):
     - Masonry
-    - PPToolKit/Core (= 0.1.6)
-  - PPToolKit/Core (0.1.6):
+    - PPToolKit/Core (= 0.1.7)
+  - PPToolKit/Core (0.1.7):
     - Masonry
 
 DEPENDENCIES:
@@ -28,7 +28,7 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   PPCatalystTool: 2e0115baef081d1215d5d0aa13c0524271c90bb6
-  PPToolKit: 50fce29b51ac8552df52758944c99559cea53463
+  PPToolKit: 23a89fb0e4e818be5d58d2e4851abc8bb9d3b5c0
 
 PODFILE CHECKSUM: 42e76330d90ee41292a35fb0a0aaec75d81c3c6d
 

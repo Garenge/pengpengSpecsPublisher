@@ -12,6 +12,7 @@
 
 #import "PPCatalystHandle.h"
 #import "PPCatalystTool.h"
+#import "UIView+Drop.h"
 
 FOUNDATION_EXPORT double PPCatalystToolVersionNumber;
 FOUNDATION_EXPORT const unsigned char PPCatalystToolVersionString[];
