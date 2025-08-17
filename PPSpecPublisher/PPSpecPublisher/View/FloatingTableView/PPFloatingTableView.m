@@ -21,7 +21,7 @@
         self.dataSource = self;
         self.separatorStyle = UITableViewCellSeparatorStyleNone;
         self.backgroundColor = rgba(249, 249, 249, 1);
-        self.showsVerticalScrollIndicator = NO;
+        self.showsVerticalScrollIndicator = YES;
         self.showsHorizontalScrollIndicator = NO;
         if (@available(iOS 15.0, *)) {
             self.sectionHeaderTopPadding = 0;
